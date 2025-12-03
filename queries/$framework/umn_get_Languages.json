@@ -1,0 +1,7 @@
+{
+  "savedInEditor": true,
+  "isValid": true,
+  "name": "umn_get_Languages",
+  "schemaName": "$framework",
+  "xsql": "Select * From GetLocaleLanguages()"
+}

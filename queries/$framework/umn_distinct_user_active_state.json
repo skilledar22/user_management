@@ -1,0 +1,7 @@
+{
+  "savedInEditor": true,
+  "isValid": true,
+  "name": "umn_distinct_user_active_state",
+  "schemaName": "$framework",
+  "xsql": "Select Distinct Case When u.enabled = '1' Then 'Yes' Else 'No' End As is_active From xactly.xc_user u"
+}

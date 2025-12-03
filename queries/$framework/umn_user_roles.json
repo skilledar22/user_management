@@ -1,0 +1,7 @@
+{
+  "savedInEditor": true,
+  "isValid": true,
+  "name": "umn_user_roles",
+  "schemaName": "$framework",
+  "xsql": "Select Case When u.enabled = '1' Then 'Yes' Else 'No' End As enabled, r.name\nFrom xactly.xc_user u\nJoin xactly.xc_user_role ur On u.user_id = ur.user_id\nJoin xactly.xc_role r On r.role_id = ur.role_id\nWhere u.email = :v_email;"
+}

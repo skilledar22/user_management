@@ -1,0 +1,7 @@
+{
+  "savedInEditor": true,
+  "isValid": true,
+  "name": "umn_user_enabled_filter",
+  "schemaName": "$framework",
+  "xsql": "Select Case When enabled = '1' Then 'Yes' Else 'No' End As enabled_yn, enabled From ( Select Distinct enabled From xactly.xc_user )"
+}

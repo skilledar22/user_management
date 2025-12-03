@@ -1,0 +1,7 @@
+{
+  "savedInEditor": true,
+  "isValid": true,
+  "name": "umn_incent_users",
+  "schemaName": "$framework",
+  "xsql": "select u.name, u.email, \ncase when u.enabled = '1' then 'Yes' else 'No' end as is_active,u.ip_addresses, u.locale, u.primary_role_type\nfrom xactly.xc_user u\njoin xactly.xc_user_role ur \non u.user_id = ur.user_id\njoin xactly.xc_role r\non r.role_id = ur.role_id\nwhere (:v_searchField is NULL or u.name like '%' || :v_searchField || '%' or u.email like '%' || :v_searchField || '%')\nAND (:v_role_name is NULL or r.name = :v_role_name)\nAND (:v_enabled is NULL or u.enabled = :v_enabled)\ngroup by u.email, u.name, u.enabled, u.ip_addresses, u.locale, u.primary_role_type\norder by u.name"
+}

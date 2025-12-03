@@ -1,0 +1,14 @@
+{
+  "variables": [
+    {
+      "name": "edit_role_name",
+      "value": "My Nice Role 3",
+      "dataType": "String"
+    }
+  ],
+  "savedInEditor": true,
+  "isValid": true,
+  "name": "umn_show_all_applications",
+  "schemaName": "$framework",
+  "xsql": "select * from ShowViewableApps(State='PUBLISHED') order by $modified_instant desc"
+}

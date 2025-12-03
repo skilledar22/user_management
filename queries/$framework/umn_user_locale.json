@@ -1,0 +1,14 @@
+{
+  "variables": [
+    {
+      "name": "v_email",
+      "value": "test@example.com",
+      "dataType": "String"
+    }
+  ],
+  "savedInEditor": true,
+  "isValid": true,
+  "name": "umn_user_locale",
+  "schemaName": "$framework",
+  "xsql": "select locale from xactly.xc_user where email = :v_email;"
+}

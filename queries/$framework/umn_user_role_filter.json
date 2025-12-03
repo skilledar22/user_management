@@ -1,0 +1,7 @@
+{
+  "savedInEditor": true,
+  "isValid": true,
+  "name": "umn_user_role_filter",
+  "schemaName": "$framework",
+  "xsql": "Select rolename From ShowRoles() Limit 5000"
+}

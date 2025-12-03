@@ -1,10 +1,49 @@
 {
-  "application" : "app/Application.json",
-  "queries" : null,
-  "workflows" : null,
-  "pageDefinitions" : [ "app/d2345361-b203-4f3a-9014-5313566567a5.json" ],
-  "policySets" : null,
-  "tables" : null,
-  "compositeComponents" : [ ],
-  "applicationTags" : null
+  "application": "app/Application.json",
+  "queries": [
+    "queries/$framework/umn_user_role_filter.json",
+    "queries/$framework/umn_user_enabled_filter.json",
+    "queries/$framework/umn_distinct_user_active_state.json",
+    "queries/$framework/umn_user_roles.json",
+    "queries/$framework/umn_user_locale.json",
+    "queries/$framework/umn_show_roles.json",
+    "queries/$framework/umn_show_all_applications.json",
+    "queries/$framework/umn_incent_users.json",
+    "queries/$framework/umn_get_Languages.json"
+  ],
+  "pageDefinitions": [
+    "app/d2345361-b203-4f3a-9014-5313566567a5.json"
+  ],
+  "tables": {
+    "schemas": [
+      "tables/schemas/$xgateway/XG_DATA_PREF_VALUE.json",
+      "tables/schemas/$xgateway/XG_DATA_PREF.json",
+      "tables/schemas/xactly/xc_user.json",
+      "tables/schemas/xactly/xc_role.json",
+      "tables/schemas/xactly/xc_user_role.json"
+    ],
+    "data": [
+      {
+        "name": "xactly.xc_user_role",
+        "path": "tables/data/xactly/xc_user_role.csv"
+      },
+      {
+        "name": "xactly.xc_user",
+        "path": "tables/data/xactly/xc_user.csv"
+      },
+      {
+        "name": "xactly.xc_role",
+        "path": "tables/data/xactly/xc_role.csv"
+      },
+      {
+        "name": "$xgateway.XG_DATA_PREF_VALUE",
+        "path": "tables/data/$xgateway/XG_DATA_PREF_VALUE.csv"
+      },
+      {
+        "name": "$xgateway.XG_DATA_PREF",
+        "path": "tables/data/$xgateway/XG_DATA_PREF.csv"
+      }
+    ]
+  },
+  "compositeComponents": []
 }
