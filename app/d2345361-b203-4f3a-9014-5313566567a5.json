@@ -213,9 +213,12 @@
                       },
                       "events": [
                         {
-                          "name": "$onPageLoad",
+                          "name": "$onModalOpen",
                           "eventSelection": "BIND_EVENT",
                           "id": "e2d4d7f4-ba5f-4de3-bac2-408aa0a70cf3",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
                           "handlers": [
                             "refresh"
                           ],
@@ -314,14 +317,11 @@
                         }
                       ],
                       "datasource": {
-                        "name": null,
-                        "schema": null,
-                        "fields": null,
-                        "type": null,
-                        "isReadOnly": false,
-                        "columns": null,
-                        "seriesColors": {},
-                        "customLabels": {}
+                        "name": "umn_business_apps",
+                        "type": "view",
+                        "isReadOnly": true,
+                        "schema": "$framework",
+                        "seriesColors": {}
                       },
                       "pagination": {
                         "currentPage": 1,
@@ -330,10 +330,14 @@
                       },
                       "columns": [],
                       "whereClauseVariable": null,
-                      "variables": [],
+                      "variables": [
+                        {
+                          "name": "v_app_names"
+                        }
+                      ],
                       "valueField": {
-                        "dataType": null,
-                        "name": null
+                        "dataType": "string",
+                        "name": "displayappname"
                       },
                       "usingMultiSelectVariableFormat": false,
                       "title": "BusinessApp config",
@@ -966,7 +970,7 @@
                         }
                       ],
                       "datasource": {
-                        "name": "umn_show_all_applications",
+                        "name": "umn_business_apps",
                         "type": "view",
                         "isReadOnly": true,
                         "schema": "$framework",
@@ -981,22 +985,22 @@
                       "whereClauseVariable": null,
                       "variables": [
                         {
-                          "name": "Incent"
+                          "name": "v_app_name"
                         }
                       ],
                       "isMultiSelect": true,
                       "shouldHideLabel": false,
                       "displayField": {
-                        "dataType": null,
-                        "name": null
+                        "dataType": "string",
+                        "name": "appname"
                       },
                       "valueField": {
-                        "dataType": null,
-                        "name": null
+                        "dataType": "string",
+                        "name": "displayappname"
                       },
                       "labelText": "Apps",
                       "layoutSize": null,
-                      "shouldRenderHidden": true
+                      "shouldRenderHidden": false
                     },
                     "control_31": {
                       "type": "checkbox",
@@ -1034,7 +1038,7 @@
                       "displayField": "Incent",
                       "valueField": false,
                       "layoutSize": null,
-                      "shouldRenderHidden": false
+                      "shouldRenderHidden": true
                     }
                   }
                 }
