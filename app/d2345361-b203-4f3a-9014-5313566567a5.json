@@ -201,84 +201,6 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "control_60": {
-                      "type": "variableConfigurator",
-                      "controlId": "e2d4d7f4-ba5f-4de3-bac2-408aa0a70cf3",
-                      "accessRoles": null,
-                      "privileges": null,
-                      "styles": {
-                        "useComponentShadow": false,
-                        "useGreyBackground": false,
-                        "useInnerGreyBackground": false
-                      },
-                      "events": [
-                        {
-                          "name": "$onModalOpen",
-                          "eventSelection": "BIND_EVENT",
-                          "id": "e2d4d7f4-ba5f-4de3-bac2-408aa0a70cf3",
-                          "broadcastArgs": {
-                            "validationXsql": ""
-                          },
-                          "handlers": [
-                            "refresh"
-                          ],
-                          "handlerArgs": [
-                            {}
-                          ],
-                          "preHandlers": [],
-                          "preHandlerArgs": []
-                        },
-                        {
-                          "name": "event_sso_enabled",
-                          "eventSelection": "CREATE_EVENT",
-                          "broadcastArgs": {
-                            "validationXsql": "",
-                            "validationLogic": [
-                              {
-                                "expression": "EQUALS",
-                                "value": "false",
-                                "datatype": "STRING",
-                                "variableName": "v_sso_id_enabled"
-                              }
-                            ],
-                            "validationLogicCombinator": "AND"
-                          },
-                          "id": "e2d4d7f4-ba5f-4de3-bac2-408aa0a70cf3",
-                          "handlers": [],
-                          "handlerArgs": [],
-                          "preHandlers": [],
-                          "preHandlerArgs": []
-                        }
-                      ],
-                      "datasource": {
-                        "name": "umn_sso_preference",
-                        "type": "view",
-                        "isReadOnly": true,
-                        "schema": "$framework",
-                        "seriesColors": {}
-                      },
-                      "pagination": {
-                        "currentPage": 1,
-                        "totalItems": null,
-                        "itemsPerPage": 200
-                      },
-                      "columns": [],
-                      "whereClauseVariable": null,
-                      "variables": [
-                        {
-                          "name": "v_sso_id_enabled"
-                        }
-                      ],
-                      "valueField": {
-                        "dataType": "string",
-                        "name": "pref"
-                      },
-                      "usingMultiSelectVariableFormat": false,
-                      "title": "SSO ID preference",
-                      "staticValue": "",
-                      "useStaticValue": false,
-                      "staticDataType": "STRING"
-                    },
                     "control_61": {
                       "type": "variableConfigurator",
                       "controlId": "023aa4f2-6441-45a2-9bf8-8d22c427fc45",
@@ -1228,6 +1150,84 @@
                 "schema": {
                   "type": "object",
                   "properties": {
+                    "control_60": {
+                      "type": "variableConfigurator",
+                      "controlId": "e2d4d7f4-ba5f-4de3-bac2-408aa0a70cf3",
+                      "accessRoles": null,
+                      "privileges": null,
+                      "styles": {
+                        "useComponentShadow": false,
+                        "useGreyBackground": false,
+                        "useInnerGreyBackground": false
+                      },
+                      "events": [
+                        {
+                          "name": "$onModalOpen",
+                          "eventSelection": "BIND_EVENT",
+                          "id": "e2d4d7f4-ba5f-4de3-bac2-408aa0a70cf3",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "handlers": [
+                            "refresh"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        },
+                        {
+                          "name": "event_sso_enabled",
+                          "eventSelection": "CREATE_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": "",
+                            "validationLogic": [
+                              {
+                                "expression": "EQUALS",
+                                "value": "false",
+                                "datatype": "STRING",
+                                "variableName": "v_sso_id_enabled"
+                              }
+                            ],
+                            "validationLogicCombinator": "AND"
+                          },
+                          "id": "e2d4d7f4-ba5f-4de3-bac2-408aa0a70cf3",
+                          "handlers": [],
+                          "handlerArgs": [],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        }
+                      ],
+                      "datasource": {
+                        "name": "umn_sso_preference",
+                        "type": "view",
+                        "isReadOnly": true,
+                        "schema": "$framework",
+                        "seriesColors": {}
+                      },
+                      "pagination": {
+                        "currentPage": 1,
+                        "totalItems": null,
+                        "itemsPerPage": 200
+                      },
+                      "columns": [],
+                      "whereClauseVariable": null,
+                      "variables": [
+                        {
+                          "name": "v_sso_id_enabled"
+                        }
+                      ],
+                      "valueField": {
+                        "dataType": "string",
+                        "name": "pref"
+                      },
+                      "usingMultiSelectVariableFormat": false,
+                      "title": "SSO ID preference",
+                      "staticValue": "",
+                      "useStaticValue": false,
+                      "staticDataType": "STRING"
+                    },
                     "control_19": {
                       "type": "input",
                       "controlId": "748aaab7-91cc-46a1-8a4e-769d6347405e",
@@ -1275,6 +1275,64 @@
                       "layoutSize": null,
                       "useEnterBroadcast": false,
                       "shouldRenderHidden": false
+                    },
+                    "control_65": {
+                      "type": "input",
+                      "controlId": "fbda8be8-7fc5-44a5-a52c-2ad4ec4c1b2a",
+                      "accessRoles": null,
+                      "privileges": null,
+                      "styles": {
+                        "useComponentShadow": false,
+                        "useGreyBackground": false,
+                        "useInnerGreyBackground": false
+                      },
+                      "events": [
+                        {
+                          "name": "$onModalOpen",
+                          "eventSelection": "BIND_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "fbda8be8-7fc5-44a5-a52c-2ad4ec4c1b2a",
+                          "handlers": [
+                            "refresh"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        },
+                        {
+                          "name": "event_sso_enabled",
+                          "eventSelection": "BIND_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "fbda8be8-7fc5-44a5-a52c-2ad4ec4c1b2a",
+                          "handlers": [
+                            "hide"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        }
+                      ],
+                      "variables": [
+                        {
+                          "name": "v_user_sso_id"
+                        }
+                      ],
+                      "labelText": "SSOID",
+                      "labelValue": "",
+                      "isMultiLine": false,
+                      "isDisabled": false,
+                      "layoutSize": null,
+                      "useEnterBroadcast": false,
+                      "shouldRenderHidden": false,
+                      "allowClear": false
                     },
                     "control_64": {
                       "type": "variableConfigurator",
@@ -1329,7 +1387,7 @@
                       "whereClauseVariable": null,
                       "variables": [
                         {
-                          "name": "v_user_roles"
+                          "name": "v_role_name"
                         }
                       ],
                       "valueField": {
