@@ -201,72 +201,6 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "control_61": {
-                      "type": "variableConfigurator",
-                      "controlId": "023aa4f2-6441-45a2-9bf8-8d22c427fc45",
-                      "accessRoles": null,
-                      "privileges": null,
-                      "styles": {
-                        "useComponentShadow": false,
-                        "useGreyBackground": false,
-                        "useInnerGreyBackground": false
-                      },
-                      "events": [
-                        {
-                          "name": "$onPageLoad",
-                          "eventSelection": "BIND_EVENT",
-                          "id": "023aa4f2-6441-45a2-9bf8-8d22c427fc45",
-                          "handlers": [
-                            "refresh"
-                          ],
-                          "handlerArgs": [
-                            {}
-                          ],
-                          "preHandlers": [],
-                          "preHandlerArgs": []
-                        },
-                        {
-                          "name": "event_businessApps_config",
-                          "eventSelection": "CREATE_EVENT",
-                          "broadcastArgs": {
-                            "validationXsql": ""
-                          },
-                          "id": "023aa4f2-6441-45a2-9bf8-8d22c427fc45",
-                          "handlers": [],
-                          "handlerArgs": [],
-                          "preHandlers": [],
-                          "preHandlerArgs": []
-                        }
-                      ],
-                      "datasource": {
-                        "name": "umn_business_apps",
-                        "type": "view",
-                        "isReadOnly": true,
-                        "schema": "$framework",
-                        "seriesColors": {}
-                      },
-                      "pagination": {
-                        "currentPage": 1,
-                        "totalItems": null,
-                        "itemsPerPage": 200
-                      },
-                      "columns": [],
-                      "whereClauseVariable": null,
-                      "variables": [
-                        {
-                          "name": "v_app_names"
-                        }
-                      ],
-                      "valueField": {
-                        "dataType": "string",
-                        "name": "displayappname"
-                      },
-                      "usingMultiSelectVariableFormat": false,
-                      "title": "BusinessApp config",
-                      "staticValue": "",
-                      "useStaticValue": false,
-                      "staticDataType": "STRING"
-                    },
                     "control_57": {
                       "type": "variableConfigurator",
                       "controlId": "903ab8c6-18fe-4423-b98c-68ae210a89c1",
@@ -345,9 +279,9 @@
                       "useStaticValue": false,
                       "staticDataType": "STRING"
                     },
-                    "control_56": {
+                    "control_60": {
                       "type": "variableConfigurator",
-                      "controlId": "08718667-d99a-4875-9d2a-021620011aa5",
+                      "controlId": "e2d4d7f4-ba5f-4de3-bac2-408aa0a70cf3",
                       "accessRoles": null,
                       "privileges": null,
                       "styles": {
@@ -357,9 +291,12 @@
                       },
                       "events": [
                         {
-                          "name": "$onPageLoad",
+                          "name": "$onModalOpen",
                           "eventSelection": "BIND_EVENT",
-                          "id": "08718667-d99a-4875-9d2a-021620011aa5",
+                          "id": "e2d4d7f4-ba5f-4de3-bac2-408aa0a70cf3",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
                           "handlers": [
                             "refresh"
                           ],
@@ -370,12 +307,21 @@
                           "preHandlerArgs": []
                         },
                         {
-                          "name": "event_language_config",
+                          "name": "event_sso_enabled",
                           "eventSelection": "CREATE_EVENT",
                           "broadcastArgs": {
-                            "validationXsql": ""
+                            "validationXsql": "",
+                            "validationLogic": [
+                              {
+                                "expression": "EQUALS",
+                                "value": "false",
+                                "datatype": "STRING",
+                                "variableName": "v_sso_id_enabled"
+                              }
+                            ],
+                            "validationLogicCombinator": "AND"
                           },
-                          "id": "08718667-d99a-4875-9d2a-021620011aa5",
+                          "id": "e2d4d7f4-ba5f-4de3-bac2-408aa0a70cf3",
                           "handlers": [],
                           "handlerArgs": [],
                           "preHandlers": [],
@@ -383,14 +329,11 @@
                         }
                       ],
                       "datasource": {
-                        "name": null,
-                        "schema": null,
-                        "fields": null,
-                        "type": null,
-                        "isReadOnly": false,
-                        "columns": null,
-                        "seriesColors": {},
-                        "customLabels": {}
+                        "name": "umn_sso_preference",
+                        "type": "view",
+                        "isReadOnly": true,
+                        "schema": "$framework",
+                        "seriesColors": {}
                       },
                       "pagination": {
                         "currentPage": 1,
@@ -399,13 +342,17 @@
                       },
                       "columns": [],
                       "whereClauseVariable": null,
-                      "variables": [],
+                      "variables": [
+                        {
+                          "name": "v_sso_id_enabled"
+                        }
+                      ],
                       "valueField": {
-                        "dataType": null,
-                        "name": null
+                        "dataType": "string",
+                        "name": "pref"
                       },
                       "usingMultiSelectVariableFormat": false,
-                      "title": "Language config",
+                      "title": "SSO ID preference",
                       "staticValue": "",
                       "useStaticValue": false,
                       "staticDataType": "STRING"
@@ -574,12 +521,12 @@
                         {
                           "name": "event_sso_enabled",
                           "eventSelection": "BIND_EVENT",
+                          "id": "bbacea76-3440-463b-a8fd-fc46f56ed3fe",
                           "broadcastArgs": {
                             "validationXsql": ""
                           },
-                          "id": "bbacea76-3440-463b-a8fd-fc46f56ed3fe",
                           "handlers": [
-                            "hide"
+                            "disable"
                           ],
                           "handlerArgs": [
                             {}
@@ -1150,9 +1097,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "control_60": {
+                    "control_66": {
                       "type": "variableConfigurator",
-                      "controlId": "e2d4d7f4-ba5f-4de3-bac2-408aa0a70cf3",
+                      "controlId": "64b104c6-8db1-46a7-863a-90288f543c92",
                       "accessRoles": null,
                       "privileges": null,
                       "styles": {
@@ -1164,10 +1111,7 @@
                         {
                           "name": "$onModalOpen",
                           "eventSelection": "BIND_EVENT",
-                          "id": "e2d4d7f4-ba5f-4de3-bac2-408aa0a70cf3",
-                          "broadcastArgs": {
-                            "validationXsql": ""
-                          },
+                          "id": "64b104c6-8db1-46a7-863a-90288f543c92",
                           "handlers": [
                             "refresh"
                           ],
@@ -1181,18 +1125,9 @@
                           "name": "event_sso_enabled",
                           "eventSelection": "CREATE_EVENT",
                           "broadcastArgs": {
-                            "validationXsql": "",
-                            "validationLogic": [
-                              {
-                                "expression": "EQUALS",
-                                "value": "false",
-                                "datatype": "STRING",
-                                "variableName": "v_sso_id_enabled"
-                              }
-                            ],
-                            "validationLogicCombinator": "AND"
+                            "validationXsql": ""
                           },
-                          "id": "e2d4d7f4-ba5f-4de3-bac2-408aa0a70cf3",
+                          "id": "64b104c6-8db1-46a7-863a-90288f543c92",
                           "handlers": [],
                           "handlerArgs": [],
                           "preHandlers": [],
@@ -1306,12 +1241,12 @@
                         {
                           "name": "event_sso_enabled",
                           "eventSelection": "BIND_EVENT",
+                          "id": "fbda8be8-7fc5-44a5-a52c-2ad4ec4c1b2a",
                           "broadcastArgs": {
                             "validationXsql": ""
                           },
-                          "id": "fbda8be8-7fc5-44a5-a52c-2ad4ec4c1b2a",
                           "handlers": [
-                            "hide"
+                            "disable"
                           ],
                           "handlerArgs": [
                             {}
@@ -1500,14 +1435,11 @@
                         }
                       ],
                       "datasource": {
-                        "name": null,
-                        "schema": null,
-                        "fields": null,
-                        "type": null,
-                        "isReadOnly": false,
-                        "columns": null,
-                        "seriesColors": {},
-                        "customLabels": {}
+                        "name": "umn_login_profiles",
+                        "type": "view",
+                        "isReadOnly": true,
+                        "schema": "$framework",
+                        "seriesColors": {}
                       },
                       "pagination": {
                         "currentPage": 1,
@@ -1516,20 +1448,24 @@
                       },
                       "columns": [],
                       "whereClauseVariable": null,
-                      "variables": [],
+                      "variables": [
+                        {
+                          "name": "v_user_login_profile"
+                        }
+                      ],
                       "isMultiSelect": false,
                       "shouldHideLabel": false,
                       "displayField": {
-                        "dataType": null,
-                        "name": null
+                        "dataType": "string",
+                        "name": "name"
                       },
                       "valueField": {
-                        "dataType": null,
-                        "name": null
+                        "dataType": "string",
+                        "name": "name"
                       },
                       "labelText": "Login Profile",
                       "layoutSize": null,
-                      "shouldRenderHidden": true
+                      "shouldRenderHidden": false
                     },
                     "control_28": {
                       "type": "dropdown",
@@ -1573,14 +1509,11 @@
                         }
                       ],
                       "datasource": {
-                        "name": null,
-                        "schema": null,
-                        "fields": null,
-                        "type": null,
-                        "isReadOnly": false,
-                        "columns": null,
-                        "seriesColors": {},
-                        "customLabels": {}
+                        "name": "umn_get_Languages",
+                        "type": "view",
+                        "isReadOnly": true,
+                        "schema": "$framework",
+                        "seriesColors": {}
                       },
                       "pagination": {
                         "currentPage": 1,
@@ -1597,12 +1530,12 @@
                       "isMultiSelect": false,
                       "shouldHideLabel": false,
                       "displayField": {
-                        "dataType": null,
-                        "name": null
+                        "dataType": "string",
+                        "name": "name"
                       },
                       "valueField": {
-                        "dataType": null,
-                        "name": null
+                        "dataType": "string",
+                        "name": "code"
                       },
                       "labelText": "Language",
                       "layoutSize": null,
@@ -1658,14 +1591,11 @@
                         }
                       ],
                       "datasource": {
-                        "name": null,
-                        "schema": null,
-                        "fields": null,
-                        "type": null,
-                        "isReadOnly": false,
-                        "columns": null,
-                        "seriesColors": {},
-                        "customLabels": {}
+                        "name": "umn_business_apps",
+                        "type": "view",
+                        "isReadOnly": true,
+                        "schema": "$framework",
+                        "seriesColors": {}
                       },
                       "pagination": {
                         "currentPage": 1,
@@ -1674,20 +1604,24 @@
                       },
                       "columns": [],
                       "whereClauseVariable": null,
-                      "variables": [],
+                      "variables": [
+                        {
+                          "name": "v_app_name"
+                        }
+                      ],
                       "isMultiSelect": false,
                       "shouldHideLabel": false,
                       "displayField": {
-                        "dataType": null,
-                        "name": null
+                        "dataType": "string",
+                        "name": "appname"
                       },
                       "valueField": {
-                        "dataType": null,
-                        "name": null
+                        "dataType": "string",
+                        "name": "displayappname"
                       },
                       "labelText": "Apps",
                       "layoutSize": null,
-                      "shouldRenderHidden": true
+                      "shouldRenderHidden": false
                     }
                   }
                 }
