@@ -25,136 +25,6 @@
             "helpIconValue": null,
             "shouldRenderHidden": false
           },
-          "control_56": {
-            "type": "variableConfigurator",
-            "controlId": "08718667-d99a-4875-9d2a-021620011aa5",
-            "accessRoles": null,
-            "privileges": null,
-            "styles": {
-              "useComponentShadow": false,
-              "useGreyBackground": false,
-              "useInnerGreyBackground": false
-            },
-            "events": [
-              {
-                "name": "$onPageLoad",
-                "eventSelection": "BIND_EVENT",
-                "id": "08718667-d99a-4875-9d2a-021620011aa5",
-                "handlers": [
-                  "refresh"
-                ],
-                "handlerArgs": [
-                  {}
-                ],
-                "preHandlers": [],
-                "preHandlerArgs": []
-              },
-              {
-                "name": "event_language_config",
-                "eventSelection": "CREATE_EVENT",
-                "broadcastArgs": {
-                  "validationXsql": ""
-                },
-                "id": "08718667-d99a-4875-9d2a-021620011aa5",
-                "handlers": [],
-                "handlerArgs": [],
-                "preHandlers": [],
-                "preHandlerArgs": []
-              }
-            ],
-            "datasource": {
-              "name": null,
-              "schema": null,
-              "fields": null,
-              "type": null,
-              "isReadOnly": false,
-              "columns": null,
-              "seriesColors": {},
-              "customLabels": {}
-            },
-            "pagination": {
-              "currentPage": 1,
-              "totalItems": null,
-              "itemsPerPage": 200
-            },
-            "columns": [],
-            "whereClauseVariable": null,
-            "variables": [],
-            "valueField": {
-              "dataType": null,
-              "name": null
-            },
-            "usingMultiSelectVariableFormat": false,
-            "title": "Language config",
-            "staticValue": "",
-            "useStaticValue": false,
-            "staticDataType": "STRING"
-          },
-          "control_60": {
-            "type": "variableConfigurator",
-            "controlId": "e2d4d7f4-ba5f-4de3-bac2-408aa0a70cf3",
-            "accessRoles": null,
-            "privileges": null,
-            "styles": {
-              "useComponentShadow": false,
-              "useGreyBackground": false,
-              "useInnerGreyBackground": false
-            },
-            "events": [
-              {
-                "name": "$onPageLoad",
-                "eventSelection": "BIND_EVENT",
-                "id": "e2d4d7f4-ba5f-4de3-bac2-408aa0a70cf3",
-                "handlers": [
-                  "refresh"
-                ],
-                "handlerArgs": [
-                  {}
-                ],
-                "preHandlers": [],
-                "preHandlerArgs": []
-              },
-              {
-                "name": "event_businessApps_config",
-                "eventSelection": "CREATE_EVENT",
-                "broadcastArgs": {
-                  "validationXsql": ""
-                },
-                "id": "e2d4d7f4-ba5f-4de3-bac2-408aa0a70cf3",
-                "handlers": [],
-                "handlerArgs": [],
-                "preHandlers": [],
-                "preHandlerArgs": []
-              }
-            ],
-            "datasource": {
-              "name": null,
-              "schema": null,
-              "fields": null,
-              "type": null,
-              "isReadOnly": false,
-              "columns": null,
-              "seriesColors": {},
-              "customLabels": {}
-            },
-            "pagination": {
-              "currentPage": 1,
-              "totalItems": null,
-              "itemsPerPage": 200
-            },
-            "columns": [],
-            "whereClauseVariable": null,
-            "variables": [],
-            "valueField": {
-              "dataType": null,
-              "name": null
-            },
-            "usingMultiSelectVariableFormat": false,
-            "title": "BusinessApp config",
-            "staticValue": "",
-            "useStaticValue": false,
-            "staticDataType": "STRING"
-          },
           "control_59": {
             "type": "variableConfigurator",
             "controlId": "5ae482a5-e2f4-451b-aab4-a6021df63545",
@@ -216,136 +86,6 @@
             },
             "usingMultiSelectVariableFormat": false,
             "title": "Roles config",
-            "staticValue": "",
-            "useStaticValue": false,
-            "staticDataType": "STRING"
-          },
-          "control_58": {
-            "type": "variableConfigurator",
-            "controlId": "56ce44fe-cbf1-4d5d-b55c-5aae5dfc0a85",
-            "accessRoles": null,
-            "privileges": null,
-            "styles": {
-              "useComponentShadow": false,
-              "useGreyBackground": false,
-              "useInnerGreyBackground": false
-            },
-            "events": [
-              {
-                "name": "$onPageLoad",
-                "eventSelection": "BIND_EVENT",
-                "id": "56ce44fe-cbf1-4d5d-b55c-5aae5dfc0a85",
-                "handlers": [
-                  "refresh"
-                ],
-                "handlerArgs": [
-                  {}
-                ],
-                "preHandlers": [],
-                "preHandlerArgs": []
-              },
-              {
-                "name": "event_ssoid_config",
-                "eventSelection": "CREATE_EVENT",
-                "broadcastArgs": {
-                  "validationXsql": ""
-                },
-                "id": "56ce44fe-cbf1-4d5d-b55c-5aae5dfc0a85",
-                "handlers": [],
-                "handlerArgs": [],
-                "preHandlers": [],
-                "preHandlerArgs": []
-              }
-            ],
-            "datasource": {
-              "name": null,
-              "schema": null,
-              "fields": null,
-              "type": null,
-              "isReadOnly": false,
-              "columns": null,
-              "seriesColors": {},
-              "customLabels": {}
-            },
-            "pagination": {
-              "currentPage": 1,
-              "totalItems": null,
-              "itemsPerPage": 200
-            },
-            "columns": [],
-            "whereClauseVariable": null,
-            "variables": [],
-            "valueField": {
-              "dataType": null,
-              "name": null
-            },
-            "usingMultiSelectVariableFormat": false,
-            "title": "SSO id config",
-            "staticValue": "",
-            "useStaticValue": false,
-            "staticDataType": "STRING"
-          },
-          "control_57": {
-            "type": "variableConfigurator",
-            "controlId": "903ab8c6-18fe-4423-b98c-68ae210a89c1",
-            "accessRoles": null,
-            "privileges": null,
-            "styles": {
-              "useComponentShadow": false,
-              "useGreyBackground": false,
-              "useInnerGreyBackground": false
-            },
-            "events": [
-              {
-                "name": "$onPageLoad",
-                "eventSelection": "BIND_EVENT",
-                "id": "903ab8c6-18fe-4423-b98c-68ae210a89c1",
-                "handlers": [
-                  "refresh"
-                ],
-                "handlerArgs": [
-                  {}
-                ],
-                "preHandlers": [],
-                "preHandlerArgs": []
-              },
-              {
-                "name": "event_envAccess_config",
-                "eventSelection": "CREATE_EVENT",
-                "broadcastArgs": {
-                  "validationXsql": ""
-                },
-                "id": "903ab8c6-18fe-4423-b98c-68ae210a89c1",
-                "handlers": [],
-                "handlerArgs": [],
-                "preHandlers": [],
-                "preHandlerArgs": []
-              }
-            ],
-            "datasource": {
-              "name": null,
-              "schema": null,
-              "fields": null,
-              "type": null,
-              "isReadOnly": false,
-              "columns": null,
-              "seriesColors": {},
-              "customLabels": {}
-            },
-            "pagination": {
-              "currentPage": 1,
-              "totalItems": null,
-              "itemsPerPage": 200
-            },
-            "columns": [],
-            "whereClauseVariable": null,
-            "variables": [],
-            "valueField": {
-              "dataType": null,
-              "name": null
-            },
-            "usingMultiSelectVariableFormat": false,
-            "title": "EnvAccess config",
             "staticValue": "",
             "useStaticValue": false,
             "staticDataType": "STRING"
@@ -461,9 +201,9 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "control_38": {
-                      "type": "xSQLButton",
-                      "controlId": "435065c6-d46a-4e4e-a8ee-2c282aa65e3c",
+                    "control_57": {
+                      "type": "variableConfigurator",
+                      "controlId": "903ab8c6-18fe-4423-b98c-68ae210a89c1",
                       "accessRoles": null,
                       "privileges": null,
                       "styles": {
@@ -471,12 +211,151 @@
                         "useGreyBackground": false,
                         "useInnerGreyBackground": false
                       },
-                      "events": [],
-                      "controlData": "Show SSO id ",
-                      "xSQL": "SELECT\n    p1.value\nFROM\n    xg_data_pref_value AS p1\nINNER JOIN\n    xg_data_pref AS p2\nON\n    p1.data_pref_id = p2.data_pref_id  \nWHERE\n    p2.name = 'show-sso-id';",
-                      "layoutSize": null,
-                      "buttonColorType": "primary",
-                      "shouldRenderHidden": true
+                      "events": [
+                        {
+                          "name": "$onModalOpen",
+                          "eventSelection": "BIND_EVENT",
+                          "id": "903ab8c6-18fe-4423-b98c-68ae210a89c1",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "handlers": [
+                            "refresh"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        },
+                        {
+                          "name": "event_envAccess_config",
+                          "eventSelection": "CREATE_EVENT",
+                          "id": "903ab8c6-18fe-4423-b98c-68ae210a89c1",
+                          "broadcastArgs": {
+                            "validationXsql": "",
+                            "validationLogic": [
+                              {
+                                "expression": "EQUALS",
+                                "value": "Production",
+                                "datatype": "STRING",
+                                "variableName": "v_site_pod_type"
+                              }
+                            ],
+                            "validationLogicCombinator": "AND"
+                          },
+                          "handlers": [],
+                          "handlerArgs": [],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        }
+                      ],
+                      "datasource": {
+                        "name": "umn_site_pod_type",
+                        "type": "view",
+                        "isReadOnly": true,
+                        "schema": "$framework",
+                        "seriesColors": {}
+                      },
+                      "pagination": {
+                        "currentPage": 1,
+                        "totalItems": null,
+                        "itemsPerPage": 200
+                      },
+                      "columns": [],
+                      "whereClauseVariable": null,
+                      "variables": [
+                        {
+                          "name": "v_site_pod_type"
+                        }
+                      ],
+                      "valueField": {
+                        "dataType": "string",
+                        "name": "podtype"
+                      },
+                      "usingMultiSelectVariableFormat": false,
+                      "title": "EnvAccess config",
+                      "staticValue": "",
+                      "useStaticValue": false,
+                      "staticDataType": "STRING"
+                    },
+                    "control_60": {
+                      "type": "variableConfigurator",
+                      "controlId": "e2d4d7f4-ba5f-4de3-bac2-408aa0a70cf3",
+                      "accessRoles": null,
+                      "privileges": null,
+                      "styles": {
+                        "useComponentShadow": false,
+                        "useGreyBackground": false,
+                        "useInnerGreyBackground": false
+                      },
+                      "events": [
+                        {
+                          "name": "$onModalOpen",
+                          "eventSelection": "BIND_EVENT",
+                          "id": "e2d4d7f4-ba5f-4de3-bac2-408aa0a70cf3",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "handlers": [
+                            "refresh"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        },
+                        {
+                          "name": "event_sso_enabled",
+                          "eventSelection": "CREATE_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": "",
+                            "validationLogic": [
+                              {
+                                "expression": "EQUALS",
+                                "value": "false",
+                                "datatype": "STRING",
+                                "variableName": "v_sso_id_enabled"
+                              }
+                            ],
+                            "validationLogicCombinator": "AND"
+                          },
+                          "id": "e2d4d7f4-ba5f-4de3-bac2-408aa0a70cf3",
+                          "handlers": [],
+                          "handlerArgs": [],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        }
+                      ],
+                      "datasource": {
+                        "name": "umn_sso_preference",
+                        "type": "view",
+                        "isReadOnly": true,
+                        "schema": "$framework",
+                        "seriesColors": {}
+                      },
+                      "pagination": {
+                        "currentPage": 1,
+                        "totalItems": null,
+                        "itemsPerPage": 200
+                      },
+                      "columns": [],
+                      "whereClauseVariable": null,
+                      "variables": [
+                        {
+                          "name": "v_sso_id_enabled"
+                        }
+                      ],
+                      "valueField": {
+                        "dataType": "string",
+                        "name": "pref"
+                      },
+                      "usingMultiSelectVariableFormat": false,
+                      "title": "SSO ID preference",
+                      "staticValue": "",
+                      "useStaticValue": false,
+                      "staticDataType": "STRING"
                     },
                     "control_5": {
                       "type": "input",
@@ -608,14 +487,14 @@
                       },
                       "events": [
                         {
-                          "name": "show_sso_id",
+                          "name": "$onModalOpen",
                           "eventSelection": "BIND_EVENT",
                           "broadcastArgs": {
                             "validationXsql": ""
                           },
                           "id": "bbacea76-3440-463b-a8fd-fc46f56ed3fe",
                           "handlers": [
-                            "show"
+                            "refresh"
                           ],
                           "handlerArgs": [
                             {}
@@ -638,11 +517,27 @@
                           ],
                           "preHandlers": [],
                           "preHandlerArgs": []
+                        },
+                        {
+                          "name": "event_sso_enabled",
+                          "eventSelection": "BIND_EVENT",
+                          "id": "bbacea76-3440-463b-a8fd-fc46f56ed3fe",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "handlers": [
+                            "disable"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
                         }
                       ],
                       "variables": [
                         {
-                          "name": "userSSOID_var"
+                          "name": "v_user_sso_id"
                         }
                       ],
                       "labelText": "SSO ID",
@@ -651,7 +546,7 @@
                       "isDisabled": false,
                       "layoutSize": null,
                       "useEnterBroadcast": false,
-                      "shouldRenderHidden": true
+                      "shouldRenderHidden": false
                     },
                     "control_11": {
                       "type": "dropdown",
@@ -769,14 +664,11 @@
                         }
                       ],
                       "datasource": {
-                        "name": null,
-                        "schema": null,
-                        "fields": null,
-                        "type": null,
-                        "isReadOnly": false,
-                        "columns": null,
-                        "seriesColors": {},
-                        "customLabels": {}
+                        "name": "umn_login_profiles",
+                        "type": "view",
+                        "isReadOnly": true,
+                        "schema": "$framework",
+                        "seriesColors": {}
                       },
                       "pagination": {
                         "currentPage": 1,
@@ -785,16 +677,20 @@
                       },
                       "columns": [],
                       "whereClauseVariable": null,
-                      "variables": [],
+                      "variables": [
+                        {
+                          "name": "v_user_login_profile"
+                        }
+                      ],
                       "isMultiSelect": false,
                       "shouldHideLabel": false,
                       "displayField": {
-                        "dataType": null,
-                        "name": null
+                        "dataType": "string",
+                        "name": "name"
                       },
                       "valueField": {
-                        "dataType": null,
-                        "name": null
+                        "dataType": "string",
+                        "name": "name"
                       },
                       "labelText": "Login Profile",
                       "layoutSize": 100,
@@ -957,7 +853,7 @@
                         }
                       ],
                       "datasource": {
-                        "name": "umn_show_all_applications",
+                        "name": "umn_business_apps",
                         "type": "view",
                         "isReadOnly": true,
                         "schema": "$framework",
@@ -972,22 +868,60 @@
                       "whereClauseVariable": null,
                       "variables": [
                         {
-                          "name": "Incent"
+                          "name": "v_app_name"
                         }
                       ],
                       "isMultiSelect": true,
                       "shouldHideLabel": false,
                       "displayField": {
-                        "dataType": null,
-                        "name": null
+                        "dataType": "string",
+                        "name": "appname"
                       },
                       "valueField": {
-                        "dataType": null,
-                        "name": null
+                        "dataType": "string",
+                        "name": "displayappname"
                       },
                       "labelText": "Apps",
                       "layoutSize": null,
-                      "shouldRenderHidden": true
+                      "shouldRenderHidden": false
+                    },
+                    "control_63": {
+                      "type": "checkbox",
+                      "controlId": "73a9ef46-53a7-4c87-9d4a-e7c60c9e2ec6",
+                      "accessRoles": null,
+                      "privileges": null,
+                      "styles": {
+                        "useComponentShadow": false,
+                        "useGreyBackground": false,
+                        "useInnerGreyBackground": false
+                      },
+                      "events": [
+                        {
+                          "name": "event_envAccess_config",
+                          "eventSelection": "BIND_EVENT",
+                          "id": "73a9ef46-53a7-4c87-9d4a-e7c60c9e2ec6",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "handlers": [
+                            "disable"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        }
+                      ],
+                      "variables": [
+                        {
+                          "name": "v_env_has_access"
+                        }
+                      ],
+                      "displayField": "has access",
+                      "valueField": false,
+                      "layoutSize": null,
+                      "shouldRenderHidden": false
                     },
                     "control_31": {
                       "type": "checkbox",
@@ -1025,7 +959,7 @@
                       "displayField": "Incent",
                       "valueField": false,
                       "layoutSize": null,
-                      "shouldRenderHidden": false
+                      "shouldRenderHidden": true
                     }
                   }
                 }
@@ -1108,7 +1042,7 @@
                         }
                       ],
                       "controlData": "Create",
-                      "xSQL": "CreateUser(Name=:v_name,Email=:v_email,Roles=:v_role_name,IncentAccess=:Incent,Locale=:v_locale,IPAddress=:v_ip_address)",
+                      "xSQL": "CreateUser(Name=:v_name,Email=:v_email,Roles=:v_role_name,Locale=:v_locale,IPAddress=:v_ip_address,LoginProfile=:v_user_login_profile,SSOId=:v_user_sso_id,AppNames=:v_app_name,AllowMultiPodsAccess=:v_env_has_access)",
                       "layoutSize": null,
                       "buttonColorType": "primary",
                       "shouldRenderHidden": false
@@ -1163,6 +1097,72 @@
                 "schema": {
                   "type": "object",
                   "properties": {
+                    "control_66": {
+                      "type": "variableConfigurator",
+                      "controlId": "64b104c6-8db1-46a7-863a-90288f543c92",
+                      "accessRoles": null,
+                      "privileges": null,
+                      "styles": {
+                        "useComponentShadow": false,
+                        "useGreyBackground": false,
+                        "useInnerGreyBackground": false
+                      },
+                      "events": [
+                        {
+                          "name": "$onModalOpen",
+                          "eventSelection": "BIND_EVENT",
+                          "id": "64b104c6-8db1-46a7-863a-90288f543c92",
+                          "handlers": [
+                            "refresh"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        },
+                        {
+                          "name": "event_sso_enabled",
+                          "eventSelection": "CREATE_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "64b104c6-8db1-46a7-863a-90288f543c92",
+                          "handlers": [],
+                          "handlerArgs": [],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        }
+                      ],
+                      "datasource": {
+                        "name": "umn_sso_preference",
+                        "type": "view",
+                        "isReadOnly": true,
+                        "schema": "$framework",
+                        "seriesColors": {}
+                      },
+                      "pagination": {
+                        "currentPage": 1,
+                        "totalItems": null,
+                        "itemsPerPage": 200
+                      },
+                      "columns": [],
+                      "whereClauseVariable": null,
+                      "variables": [
+                        {
+                          "name": "v_sso_id_enabled"
+                        }
+                      ],
+                      "valueField": {
+                        "dataType": "string",
+                        "name": "pref"
+                      },
+                      "usingMultiSelectVariableFormat": false,
+                      "title": "SSO ID preference",
+                      "staticValue": "",
+                      "useStaticValue": false,
+                      "staticDataType": "STRING"
+                    },
                     "control_19": {
                       "type": "input",
                       "controlId": "748aaab7-91cc-46a1-8a4e-769d6347405e",
@@ -1211,6 +1211,130 @@
                       "useEnterBroadcast": false,
                       "shouldRenderHidden": false
                     },
+                    "control_65": {
+                      "type": "input",
+                      "controlId": "fbda8be8-7fc5-44a5-a52c-2ad4ec4c1b2a",
+                      "accessRoles": null,
+                      "privileges": null,
+                      "styles": {
+                        "useComponentShadow": false,
+                        "useGreyBackground": false,
+                        "useInnerGreyBackground": false
+                      },
+                      "events": [
+                        {
+                          "name": "$onModalOpen",
+                          "eventSelection": "BIND_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "fbda8be8-7fc5-44a5-a52c-2ad4ec4c1b2a",
+                          "handlers": [
+                            "refresh"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        },
+                        {
+                          "name": "event_sso_enabled",
+                          "eventSelection": "BIND_EVENT",
+                          "id": "fbda8be8-7fc5-44a5-a52c-2ad4ec4c1b2a",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "handlers": [
+                            "disable"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        }
+                      ],
+                      "variables": [
+                        {
+                          "name": "v_user_sso_id"
+                        }
+                      ],
+                      "labelText": "SSOID",
+                      "labelValue": "",
+                      "isMultiLine": false,
+                      "isDisabled": false,
+                      "layoutSize": null,
+                      "useEnterBroadcast": false,
+                      "shouldRenderHidden": false,
+                      "allowClear": false
+                    },
+                    "control_64": {
+                      "type": "variableConfigurator",
+                      "controlId": "20694847-541e-49d9-9b27-7de3bff33d25",
+                      "accessRoles": null,
+                      "privileges": null,
+                      "styles": {
+                        "useComponentShadow": false,
+                        "useGreyBackground": false,
+                        "useInnerGreyBackground": false
+                      },
+                      "events": [
+                        {
+                          "name": "$onModalOpen",
+                          "eventSelection": "BIND_EVENT",
+                          "id": "20694847-541e-49d9-9b27-7de3bff33d25",
+                          "handlers": [
+                            "refresh"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        },
+                        {
+                          "name": "event_edit_user_role",
+                          "eventSelection": "CREATE_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "20694847-541e-49d9-9b27-7de3bff33d25",
+                          "handlers": [],
+                          "handlerArgs": [],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        }
+                      ],
+                      "datasource": {
+                        "name": "umn_user_roles",
+                        "type": "view",
+                        "isReadOnly": true,
+                        "schema": "$framework",
+                        "seriesColors": {}
+                      },
+                      "pagination": {
+                        "currentPage": 1,
+                        "totalItems": null,
+                        "itemsPerPage": 200
+                      },
+                      "columns": [],
+                      "whereClauseVariable": null,
+                      "variables": [
+                        {
+                          "name": "v_role_name"
+                        }
+                      ],
+                      "valueField": {
+                        "dataType": "string",
+                        "name": "name"
+                      },
+                      "usingMultiSelectVariableFormat": false,
+                      "title": "User Roles",
+                      "staticValue": "",
+                      "useStaticValue": false,
+                      "staticDataType": null
+                    },
                     "control_26": {
                       "type": "dropdown",
                       "controlId": "4c6778d5-10b9-442d-8cf8-b729c9e39fcb",
@@ -1236,12 +1360,12 @@
                           "preHandlerArgs": []
                         },
                         {
-                          "name": "e_user_assigned_roles",
+                          "name": "event_edit_user_role",
                           "eventSelection": "BIND_EVENT",
+                          "id": "4c6778d5-10b9-442d-8cf8-b729c9e39fcb",
                           "broadcastArgs": {
                             "validationXsql": ""
                           },
-                          "id": "4c6778d5-10b9-442d-8cf8-b729c9e39fcb",
                           "handlers": [
                             "assignCurrentVariable"
                           ],
@@ -1285,9 +1409,9 @@
                       "layoutSize": null,
                       "shouldRenderHidden": false
                     },
-                    "control_39": {
+                    "control_67": {
                       "type": "variableConfigurator",
-                      "controlId": "947099b5-f5d4-41a5-ae1d-86492ff18b73",
+                      "controlId": "348c4c3c-c886-4dda-b12c-fc47a1f0c7dd",
                       "accessRoles": null,
                       "privileges": null,
                       "styles": {
@@ -1299,7 +1423,7 @@
                         {
                           "name": "$onModalOpen",
                           "eventSelection": "BIND_EVENT",
-                          "id": "947099b5-f5d4-41a5-ae1d-86492ff18b73",
+                          "id": "348c4c3c-c886-4dda-b12c-fc47a1f0c7dd",
                           "handlers": [
                             "refresh"
                           ],
@@ -1310,12 +1434,12 @@
                           "preHandlerArgs": []
                         },
                         {
-                          "name": "e_user_assigned_roles",
+                          "name": "event_assigned_login_profile",
                           "eventSelection": "CREATE_EVENT",
                           "broadcastArgs": {
                             "validationXsql": ""
                           },
-                          "id": "947099b5-f5d4-41a5-ae1d-86492ff18b73",
+                          "id": "348c4c3c-c886-4dda-b12c-fc47a1f0c7dd",
                           "handlers": [],
                           "handlerArgs": [],
                           "preHandlers": [],
@@ -1323,7 +1447,7 @@
                         }
                       ],
                       "datasource": {
-                        "name": "umn_user_roles",
+                        "name": "umn_user_login_profile",
                         "type": "view",
                         "isReadOnly": true,
                         "schema": "$framework",
@@ -1338,7 +1462,7 @@
                       "whereClauseVariable": null,
                       "variables": [
                         {
-                          "name": "v_role_name"
+                          "name": "v_user_login_profile"
                         }
                       ],
                       "valueField": {
@@ -1346,7 +1470,7 @@
                         "name": "name"
                       },
                       "usingMultiSelectVariableFormat": false,
-                      "title": "user Role",
+                      "title": "User Login Profile",
                       "staticValue": "",
                       "useStaticValue": false,
                       "staticDataType": "STRING"
@@ -1374,17 +1498,30 @@
                           ],
                           "preHandlers": [],
                           "preHandlerArgs": []
+                        },
+                        {
+                          "name": "event_assigned_login_profile",
+                          "eventSelection": "BIND_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "862a6150-dc37-4527-9903-92754f1ffde9",
+                          "handlers": [
+                            "assignCurrentVariable"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
                         }
                       ],
                       "datasource": {
-                        "name": null,
-                        "schema": null,
-                        "fields": null,
-                        "type": null,
-                        "isReadOnly": false,
-                        "columns": null,
-                        "seriesColors": {},
-                        "customLabels": {}
+                        "name": "umn_login_profiles",
+                        "type": "view",
+                        "isReadOnly": true,
+                        "schema": "$framework",
+                        "seriesColors": {}
                       },
                       "pagination": {
                         "currentPage": 1,
@@ -1393,20 +1530,24 @@
                       },
                       "columns": [],
                       "whereClauseVariable": null,
-                      "variables": [],
+                      "variables": [
+                        {
+                          "name": "v_user_login_profile"
+                        }
+                      ],
                       "isMultiSelect": false,
                       "shouldHideLabel": false,
                       "displayField": {
-                        "dataType": null,
-                        "name": null
+                        "dataType": "string",
+                        "name": "name"
                       },
                       "valueField": {
-                        "dataType": null,
-                        "name": null
+                        "dataType": "string",
+                        "name": "name"
                       },
                       "labelText": "Login Profile",
                       "layoutSize": null,
-                      "shouldRenderHidden": true
+                      "shouldRenderHidden": false
                     },
                     "control_28": {
                       "type": "dropdown",
@@ -1450,80 +1591,7 @@
                         }
                       ],
                       "datasource": {
-                        "name": null,
-                        "schema": null,
-                        "fields": null,
-                        "type": null,
-                        "isReadOnly": false,
-                        "columns": null,
-                        "seriesColors": {},
-                        "customLabels": {}
-                      },
-                      "pagination": {
-                        "currentPage": 1,
-                        "totalItems": null,
-                        "itemsPerPage": 200
-                      },
-                      "columns": [],
-                      "whereClauseVariable": null,
-                      "variables": [
-                        {
-                          "name": "v_locale"
-                        }
-                      ],
-                      "isMultiSelect": false,
-                      "shouldHideLabel": false,
-                      "displayField": {
-                        "dataType": null,
-                        "name": null
-                      },
-                      "valueField": {
-                        "dataType": null,
-                        "name": null
-                      },
-                      "labelText": "Language",
-                      "layoutSize": null,
-                      "shouldRenderHidden": false
-                    },
-                    "control_41": {
-                      "type": "variableConfigurator",
-                      "controlId": "158ad55d-1cd2-469d-88cd-847c3cc14ddd",
-                      "accessRoles": null,
-                      "privileges": null,
-                      "styles": {
-                        "useComponentShadow": false,
-                        "useGreyBackground": false,
-                        "useInnerGreyBackground": false
-                      },
-                      "events": [
-                        {
-                          "name": "$onModalOpen",
-                          "eventSelection": "BIND_EVENT",
-                          "id": "158ad55d-1cd2-469d-88cd-847c3cc14ddd",
-                          "handlers": [
-                            "refresh"
-                          ],
-                          "handlerArgs": [
-                            {}
-                          ],
-                          "preHandlers": [],
-                          "preHandlerArgs": []
-                        },
-                        {
-                          "name": "e_user_locale",
-                          "eventSelection": "CREATE_EVENT",
-                          "broadcastArgs": {
-                            "validationXsql": ""
-                          },
-                          "id": "158ad55d-1cd2-469d-88cd-847c3cc14ddd",
-                          "handlers": [],
-                          "handlerArgs": [],
-                          "preHandlers": [],
-                          "preHandlerArgs": []
-                        }
-                      ],
-                      "datasource": {
-                        "name": "umn_user_locale",
+                        "name": "umn_get_Languages",
                         "type": "view",
                         "isReadOnly": true,
                         "schema": "$framework",
@@ -1541,15 +1609,19 @@
                           "name": "v_locale"
                         }
                       ],
+                      "isMultiSelect": false,
+                      "shouldHideLabel": false,
+                      "displayField": {
+                        "dataType": "string",
+                        "name": "name"
+                      },
                       "valueField": {
                         "dataType": "string",
-                        "name": "locale"
+                        "name": "code"
                       },
-                      "usingMultiSelectVariableFormat": false,
-                      "title": "locale",
-                      "staticValue": "",
-                      "useStaticValue": false,
-                      "staticDataType": "STRING"
+                      "labelText": "Language",
+                      "layoutSize": null,
+                      "shouldRenderHidden": false
                     },
                     "control_24": {
                       "type": "input",
@@ -1575,9 +1647,9 @@
                       "useEnterBroadcast": false,
                       "shouldRenderHidden": false
                     },
-                    "control_29": {
-                      "type": "dropdown",
-                      "controlId": "d08dee91-e956-4ce2-aa49-bd88999f433e",
+                    "control_68": {
+                      "type": "variableConfigurator",
+                      "controlId": "7651d44a-c2ac-4527-9f31-8d21592bef75",
                       "accessRoles": null,
                       "privileges": null,
                       "styles": {
@@ -1589,7 +1661,7 @@
                         {
                           "name": "$onModalOpen",
                           "eventSelection": "BIND_EVENT",
-                          "id": "d08dee91-e956-4ce2-aa49-bd88999f433e",
+                          "id": "7651d44a-c2ac-4527-9f31-8d21592bef75",
                           "handlers": [
                             "refresh"
                           ],
@@ -1600,24 +1672,20 @@
                           "preHandlerArgs": []
                         },
                         {
-                          "name": "event_is_active",
-                          "eventSelection": "BIND_EVENT",
+                          "name": "event_user_assigned_apps",
+                          "eventSelection": "CREATE_EVENT",
                           "broadcastArgs": {
                             "validationXsql": ""
                           },
-                          "id": "d08dee91-e956-4ce2-aa49-bd88999f433e",
-                          "handlers": [
-                            "assignCurrentVariable"
-                          ],
-                          "handlerArgs": [
-                            {}
-                          ],
+                          "id": "7651d44a-c2ac-4527-9f31-8d21592bef75",
+                          "handlers": [],
+                          "handlerArgs": [],
                           "preHandlers": [],
                           "preHandlerArgs": []
                         }
                       ],
                       "datasource": {
-                        "name": "umn_distinct_user_active_state",
+                        "name": "umn_get_user_app",
                         "type": "view",
                         "isReadOnly": true,
                         "schema": "$framework",
@@ -1632,22 +1700,18 @@
                       "whereClauseVariable": null,
                       "variables": [
                         {
-                          "name": "v_is_active"
+                          "name": "v_app_name"
                         }
                       ],
-                      "isMultiSelect": false,
-                      "shouldHideLabel": false,
-                      "displayField": {
-                        "dataType": "string",
-                        "name": "is_active"
-                      },
                       "valueField": {
                         "dataType": "string",
-                        "name": "is_active"
+                        "name": "displayappname"
                       },
-                      "labelText": "Is Active",
-                      "layoutSize": null,
-                      "shouldRenderHidden": false
+                      "usingMultiSelectVariableFormat": false,
+                      "title": "assigned apps",
+                      "staticValue": "",
+                      "useStaticValue": false,
+                      "staticDataType": "STRING"
                     },
                     "control_54": {
                       "type": "dropdown",
@@ -1672,58 +1736,14 @@
                           ],
                           "preHandlers": [],
                           "preHandlerArgs": []
-                        }
-                      ],
-                      "datasource": {
-                        "name": null,
-                        "schema": null,
-                        "fields": null,
-                        "type": null,
-                        "isReadOnly": false,
-                        "columns": null,
-                        "seriesColors": {},
-                        "customLabels": {}
-                      },
-                      "pagination": {
-                        "currentPage": 1,
-                        "totalItems": null,
-                        "itemsPerPage": 200
-                      },
-                      "columns": [],
-                      "whereClauseVariable": null,
-                      "variables": [],
-                      "isMultiSelect": false,
-                      "shouldHideLabel": false,
-                      "displayField": {
-                        "dataType": null,
-                        "name": null
-                      },
-                      "valueField": {
-                        "dataType": null,
-                        "name": null
-                      },
-                      "labelText": "Apps",
-                      "layoutSize": null,
-                      "shouldRenderHidden": true
-                    },
-                    "control_44": {
-                      "type": "checkbox",
-                      "controlId": "79029f63-03a3-4ea0-abe1-f18e9daef7d6",
-                      "accessRoles": null,
-                      "privileges": null,
-                      "styles": {
-                        "useComponentShadow": false,
-                        "useGreyBackground": false,
-                        "useInnerGreyBackground": false
-                      },
-                      "events": [
+                        },
                         {
-                          "name": "event_is_active",
+                          "name": "event_user_assigned_apps",
                           "eventSelection": "BIND_EVENT",
-                          "id": "79029f63-03a3-4ea0-abe1-f18e9daef7d6",
                           "broadcastArgs": {
                             "validationXsql": ""
                           },
+                          "id": "1828b26d-edcc-4e5f-bf08-82a67c61d161",
                           "handlers": [
                             "assignCurrentVariable"
                           ],
@@ -1734,56 +1754,8 @@
                           "preHandlerArgs": []
                         }
                       ],
-                      "variables": [
-                        {
-                          "name": "v_is_active"
-                        }
-                      ],
-                      "displayField": "Incent ",
-                      "valueField": false,
-                      "layoutSize": null,
-                      "shouldRenderHidden": false
-                    },
-                    "control_52": {
-                      "type": "variableConfigurator",
-                      "controlId": "29653f6e-c065-4805-9d5f-b083e7bbb435",
-                      "accessRoles": null,
-                      "privileges": null,
-                      "styles": {
-                        "useComponentShadow": false,
-                        "useGreyBackground": false,
-                        "useInnerGreyBackground": false
-                      },
-                      "events": [
-                        {
-                          "name": "$onModalOpen",
-                          "eventSelection": "BIND_EVENT",
-                          "id": "29653f6e-c065-4805-9d5f-b083e7bbb435",
-                          "handlers": [
-                            "refresh"
-                          ],
-                          "handlerArgs": [
-                            {}
-                          ],
-                          "preHandlers": [],
-                          "preHandlerArgs": []
-                        },
-                        {
-                          "name": "event_is_active",
-                          "eventSelection": "CREATE_EVENT",
-                          "id": "29653f6e-c065-4805-9d5f-b083e7bbb435",
-                          "broadcastArgs": {
-                            "validationXsql": "",
-                            "validationLogic": []
-                          },
-                          "handlers": [],
-                          "handlerArgs": [],
-                          "preHandlers": [],
-                          "preHandlerArgs": []
-                        }
-                      ],
                       "datasource": {
-                        "name": "umn_incent_users",
+                        "name": "umn_business_apps",
                         "type": "view",
                         "isReadOnly": true,
                         "schema": "$framework",
@@ -1798,18 +1770,136 @@
                       "whereClauseVariable": null,
                       "variables": [
                         {
-                          "name": "v_is_active"
+                          "name": "v_app_name"
+                        }
+                      ],
+                      "isMultiSelect": false,
+                      "shouldHideLabel": false,
+                      "displayField": {
+                        "dataType": "string",
+                        "name": "appname"
+                      },
+                      "valueField": {
+                        "dataType": "string",
+                        "name": "displayappname"
+                      },
+                      "labelText": "Apps",
+                      "layoutSize": null,
+                      "shouldRenderHidden": false,
+                      "allowClearForSingleSelect": true
+                    },
+                    "control_70": {
+                      "type": "variableConfigurator",
+                      "controlId": "0b4a95a8-a63b-47de-a0b9-c2feb944c3e7",
+                      "accessRoles": null,
+                      "privileges": null,
+                      "styles": {
+                        "useComponentShadow": false,
+                        "useGreyBackground": false,
+                        "useInnerGreyBackground": false
+                      },
+                      "events": [
+                        {
+                          "name": "$onModalOpen",
+                          "eventSelection": "BIND_EVENT",
+                          "id": "0b4a95a8-a63b-47de-a0b9-c2feb944c3e7",
+                          "handlers": [
+                            "refresh"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        },
+                        {
+                          "name": "event_envAccess_config",
+                          "eventSelection": "CREATE_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": "",
+                            "validationLogic": [
+                              {
+                                "expression": "EQUALS",
+                                "value": "Production",
+                                "datatype": "STRING",
+                                "variableName": "v_site_pod_type"
+                              }
+                            ],
+                            "validationLogicCombinator": "AND"
+                          },
+                          "id": "0b4a95a8-a63b-47de-a0b9-c2feb944c3e7",
+                          "handlers": [],
+                          "handlerArgs": [],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        }
+                      ],
+                      "datasource": {
+                        "name": "umn_site_pod_type",
+                        "type": "view",
+                        "isReadOnly": true,
+                        "schema": "$framework",
+                        "seriesColors": {}
+                      },
+                      "pagination": {
+                        "currentPage": 1,
+                        "totalItems": null,
+                        "itemsPerPage": 200
+                      },
+                      "columns": [],
+                      "whereClauseVariable": null,
+                      "variables": [
+                        {
+                          "name": "v_site_pod_type"
                         }
                       ],
                       "valueField": {
                         "dataType": "string",
-                        "name": "is_active"
+                        "name": "podtype"
                       },
                       "usingMultiSelectVariableFormat": false,
-                      "title": "Is active",
+                      "title": "site pod config",
                       "staticValue": "",
                       "useStaticValue": false,
-                      "staticDataType": null
+                      "staticDataType": "STRING"
+                    },
+                    "control_69": {
+                      "type": "checkbox",
+                      "controlId": "edec8dd4-23ce-4532-8083-680c8324de8d",
+                      "accessRoles": null,
+                      "privileges": null,
+                      "styles": {
+                        "useComponentShadow": false,
+                        "useGreyBackground": false,
+                        "useInnerGreyBackground": false
+                      },
+                      "events": [
+                        {
+                          "name": "event_envAccess_config",
+                          "eventSelection": "BIND_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "edec8dd4-23ce-4532-8083-680c8324de8d",
+                          "handlers": [
+                            "disable"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        }
+                      ],
+                      "variables": [
+                        {
+                          "name": "v_env_has_access"
+                        }
+                      ],
+                      "displayField": "has Access",
+                      "valueField": false,
+                      "layoutSize": null,
+                      "shouldRenderHidden": false
                     }
                   }
                 }
@@ -1877,7 +1967,7 @@
                         }
                       ],
                       "controlData": "Update",
-                      "xSQL": "",
+                      "xSQL": "UpdateUser(Name=:v_name,Email=:v_email,Roles=:v_role_name,Locale=:v_locale,IPAddress=:v_ip_address,LoginProfile=:v_user_login_profile,SSOId=:v_user_sso_id,AppNames=:v_app_name,AllowMultiPodsAccess=:v_env_has_access)",
                       "layoutSize": null,
                       "buttonColorType": "primary",
                       "shouldRenderHidden": false
