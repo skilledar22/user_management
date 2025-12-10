@@ -1409,6 +1409,72 @@
                       "layoutSize": null,
                       "shouldRenderHidden": false
                     },
+                    "control_67": {
+                      "type": "variableConfigurator",
+                      "controlId": "348c4c3c-c886-4dda-b12c-fc47a1f0c7dd",
+                      "accessRoles": null,
+                      "privileges": null,
+                      "styles": {
+                        "useComponentShadow": false,
+                        "useGreyBackground": false,
+                        "useInnerGreyBackground": false
+                      },
+                      "events": [
+                        {
+                          "name": "$onModalOpen",
+                          "eventSelection": "BIND_EVENT",
+                          "id": "348c4c3c-c886-4dda-b12c-fc47a1f0c7dd",
+                          "handlers": [
+                            "refresh"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        },
+                        {
+                          "name": "event_assigned_login_profile",
+                          "eventSelection": "CREATE_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "348c4c3c-c886-4dda-b12c-fc47a1f0c7dd",
+                          "handlers": [],
+                          "handlerArgs": [],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        }
+                      ],
+                      "datasource": {
+                        "name": "umn_user_login_profile",
+                        "type": "view",
+                        "isReadOnly": true,
+                        "schema": "$framework",
+                        "seriesColors": {}
+                      },
+                      "pagination": {
+                        "currentPage": 1,
+                        "totalItems": null,
+                        "itemsPerPage": 200
+                      },
+                      "columns": [],
+                      "whereClauseVariable": null,
+                      "variables": [
+                        {
+                          "name": "v_user_login_profile"
+                        }
+                      ],
+                      "valueField": {
+                        "dataType": "string",
+                        "name": "name"
+                      },
+                      "usingMultiSelectVariableFormat": false,
+                      "title": "User Login Profile",
+                      "staticValue": "",
+                      "useStaticValue": false,
+                      "staticDataType": "STRING"
+                    },
                     "control_27": {
                       "type": "dropdown",
                       "controlId": "862a6150-dc37-4527-9903-92754f1ffde9",
@@ -1426,6 +1492,22 @@
                           "id": "862a6150-dc37-4527-9903-92754f1ffde9",
                           "handlers": [
                             "refresh"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        },
+                        {
+                          "name": "event_assigned_login_profile",
+                          "eventSelection": "BIND_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "862a6150-dc37-4527-9903-92754f1ffde9",
+                          "handlers": [
+                            "assignCurrentVariable"
                           ],
                           "handlerArgs": [
                             {}
