@@ -12,7 +12,8 @@
     "queries/$framework/umn_get_Languages.json"
   ],
   "pageDefinitions": [
-    "app/d2345361-b203-4f3a-9014-5313566567a5.json"
+    "app/d2345361-b203-4f3a-9014-5313566567a5.json",
+    "app/861dd70a-a0a3-4a2b-bd6b-8abf65dbe715.json"
   ],
   "tables": {
     "schemas": [

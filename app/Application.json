@@ -4,10 +4,8 @@
   "applicationName": "User Management App2",
   "applicationState": "DRAFT",
   "defaultBranch": "main",
-  "gitSubpath": null,
   "gitUrl": "https://github.com/skilledar22/user_management",
   "icon": "LogoIconOnlyUserManagementComponent",
-  "mainBranch": null,
   "sections": [
     {
       "name": "Users",
@@ -16,7 +14,17 @@
       "description": "",
       "sections": [],
       "accessRoles": null,
-      "privileges": null
+      "privileges": null,
+      "tagIds": null
+    },
+    {
+      "name": "Roles",
+      "icon": "Organization",
+      "pageDefinitionId": "861dd70a-a0a3-4a2b-bd6b-8abf65dbe715",
+      "sections": [],
+      "accessRoles": null,
+      "privileges": null,
+      "isReferredPage": false
     }
   ],
   "tagIds": []

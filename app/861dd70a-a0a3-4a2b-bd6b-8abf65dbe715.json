@@ -1,0 +1,15 @@
+{
+  "description": null,
+  "pageDefinitionId": "861dd70a-a0a3-4a2b-bd6b-8abf65dbe715",
+  "pageSchema": {
+    "properties": {},
+    "controlSchema": {
+      "schema": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  },
+  "title": "Roles Page",
+  "versionName": "1.0"
+}
