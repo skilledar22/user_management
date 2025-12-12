@@ -475,79 +475,6 @@
                       "useEnterBroadcast": false,
                       "shouldRenderHidden": false
                     },
-                    "control_32": {
-                      "type": "input",
-                      "controlId": "bbacea76-3440-463b-a8fd-fc46f56ed3fe",
-                      "accessRoles": null,
-                      "privileges": null,
-                      "styles": {
-                        "useComponentShadow": false,
-                        "useGreyBackground": false,
-                        "useInnerGreyBackground": false
-                      },
-                      "events": [
-                        {
-                          "name": "$onModalOpen",
-                          "eventSelection": "BIND_EVENT",
-                          "broadcastArgs": {
-                            "validationXsql": ""
-                          },
-                          "id": "bbacea76-3440-463b-a8fd-fc46f56ed3fe",
-                          "handlers": [
-                            "refresh"
-                          ],
-                          "handlerArgs": [
-                            {}
-                          ],
-                          "preHandlers": [],
-                          "preHandlerArgs": []
-                        },
-                        {
-                          "name": "event_refresh_createSlideOut",
-                          "eventSelection": "BIND_EVENT",
-                          "id": "bbacea76-3440-463b-a8fd-fc46f56ed3fe",
-                          "broadcastArgs": {
-                            "validationXsql": ""
-                          },
-                          "handlers": [
-                            "reset"
-                          ],
-                          "handlerArgs": [
-                            {}
-                          ],
-                          "preHandlers": [],
-                          "preHandlerArgs": []
-                        },
-                        {
-                          "name": "event_sso_enabled",
-                          "eventSelection": "BIND_EVENT",
-                          "id": "bbacea76-3440-463b-a8fd-fc46f56ed3fe",
-                          "broadcastArgs": {
-                            "validationXsql": ""
-                          },
-                          "handlers": [
-                            "disable"
-                          ],
-                          "handlerArgs": [
-                            {}
-                          ],
-                          "preHandlers": [],
-                          "preHandlerArgs": []
-                        }
-                      ],
-                      "variables": [
-                        {
-                          "name": "v_user_sso_id"
-                        }
-                      ],
-                      "labelText": "SSO ID",
-                      "labelValue": "",
-                      "isMultiLine": false,
-                      "isDisabled": false,
-                      "layoutSize": null,
-                      "useEnterBroadcast": false,
-                      "shouldRenderHidden": false
-                    },
                     "control_11": {
                       "type": "dropdown",
                       "controlId": "d5951e1c-4c41-46a7-a66e-da225b2f2c16",
@@ -885,6 +812,79 @@
                       "layoutSize": null,
                       "shouldRenderHidden": false
                     },
+                    "control_32": {
+                      "type": "input",
+                      "controlId": "bbacea76-3440-463b-a8fd-fc46f56ed3fe",
+                      "accessRoles": null,
+                      "privileges": null,
+                      "styles": {
+                        "useComponentShadow": false,
+                        "useGreyBackground": false,
+                        "useInnerGreyBackground": false
+                      },
+                      "events": [
+                        {
+                          "name": "$onModalOpen",
+                          "eventSelection": "BIND_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "bbacea76-3440-463b-a8fd-fc46f56ed3fe",
+                          "handlers": [
+                            "refresh"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        },
+                        {
+                          "name": "event_refresh_createSlideOut",
+                          "eventSelection": "BIND_EVENT",
+                          "id": "bbacea76-3440-463b-a8fd-fc46f56ed3fe",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "handlers": [
+                            "reset"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        },
+                        {
+                          "name": "event_sso_enabled",
+                          "eventSelection": "BIND_EVENT",
+                          "id": "bbacea76-3440-463b-a8fd-fc46f56ed3fe",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "handlers": [
+                            "disable"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        }
+                      ],
+                      "variables": [
+                        {
+                          "name": "v_user_sso_id"
+                        }
+                      ],
+                      "labelText": "SSO ID",
+                      "labelValue": "",
+                      "isMultiLine": false,
+                      "isDisabled": false,
+                      "layoutSize": null,
+                      "useEnterBroadcast": false,
+                      "shouldRenderHidden": false
+                    },
                     "control_63": {
                       "type": "checkbox",
                       "controlId": "73a9ef46-53a7-4c87-9d4a-e7c60c9e2ec6",
@@ -1033,6 +1033,18 @@
                           "broadcastArgs": {
                             "validationXsql": "call ValidEmail(Email=:v_email)",
                             "validationLogic": []
+                          },
+                          "id": "7db02012-5a2c-49d0-a116-4fe101b91ec9",
+                          "handlers": [],
+                          "handlerArgs": [],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        },
+                        {
+                          "name": "create_user_slideout",
+                          "eventSelection": "CREATE_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
                           },
                           "id": "7db02012-5a2c-49d0-a116-4fe101b91ec9",
                           "handlers": [],
@@ -1210,64 +1222,6 @@
                       "layoutSize": null,
                       "useEnterBroadcast": false,
                       "shouldRenderHidden": false
-                    },
-                    "control_65": {
-                      "type": "input",
-                      "controlId": "fbda8be8-7fc5-44a5-a52c-2ad4ec4c1b2a",
-                      "accessRoles": null,
-                      "privileges": null,
-                      "styles": {
-                        "useComponentShadow": false,
-                        "useGreyBackground": false,
-                        "useInnerGreyBackground": false
-                      },
-                      "events": [
-                        {
-                          "name": "$onModalOpen",
-                          "eventSelection": "BIND_EVENT",
-                          "broadcastArgs": {
-                            "validationXsql": ""
-                          },
-                          "id": "fbda8be8-7fc5-44a5-a52c-2ad4ec4c1b2a",
-                          "handlers": [
-                            "refresh"
-                          ],
-                          "handlerArgs": [
-                            {}
-                          ],
-                          "preHandlers": [],
-                          "preHandlerArgs": []
-                        },
-                        {
-                          "name": "event_sso_enabled",
-                          "eventSelection": "BIND_EVENT",
-                          "id": "fbda8be8-7fc5-44a5-a52c-2ad4ec4c1b2a",
-                          "broadcastArgs": {
-                            "validationXsql": ""
-                          },
-                          "handlers": [
-                            "disable"
-                          ],
-                          "handlerArgs": [
-                            {}
-                          ],
-                          "preHandlers": [],
-                          "preHandlerArgs": []
-                        }
-                      ],
-                      "variables": [
-                        {
-                          "name": "v_user_sso_id"
-                        }
-                      ],
-                      "labelText": "SSOID",
-                      "labelValue": "",
-                      "isMultiLine": false,
-                      "isDisabled": false,
-                      "layoutSize": null,
-                      "useEnterBroadcast": false,
-                      "shouldRenderHidden": false,
-                      "allowClear": false
                     },
                     "control_64": {
                       "type": "variableConfigurator",
@@ -1863,6 +1817,64 @@
                       "useStaticValue": false,
                       "staticDataType": "STRING"
                     },
+                    "control_65": {
+                      "type": "input",
+                      "controlId": "fbda8be8-7fc5-44a5-a52c-2ad4ec4c1b2a",
+                      "accessRoles": null,
+                      "privileges": null,
+                      "styles": {
+                        "useComponentShadow": false,
+                        "useGreyBackground": false,
+                        "useInnerGreyBackground": false
+                      },
+                      "events": [
+                        {
+                          "name": "$onModalOpen",
+                          "eventSelection": "BIND_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "fbda8be8-7fc5-44a5-a52c-2ad4ec4c1b2a",
+                          "handlers": [
+                            "refresh"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        },
+                        {
+                          "name": "event_sso_enabled",
+                          "eventSelection": "BIND_EVENT",
+                          "id": "fbda8be8-7fc5-44a5-a52c-2ad4ec4c1b2a",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "handlers": [
+                            "disable"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        }
+                      ],
+                      "variables": [
+                        {
+                          "name": "v_user_sso_id"
+                        }
+                      ],
+                      "labelText": "SSOID",
+                      "labelValue": "",
+                      "isMultiLine": false,
+                      "isDisabled": false,
+                      "layoutSize": null,
+                      "useEnterBroadcast": false,
+                      "shouldRenderHidden": false,
+                      "allowClear": false
+                    },
                     "control_69": {
                       "type": "checkbox",
                       "controlId": "edec8dd4-23ce-4532-8083-680c8324de8d",
@@ -1955,6 +1967,18 @@
                       "events": [
                         {
                           "name": "event_update_user",
+                          "eventSelection": "CREATE_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "6b540d94-f758-4b66-bbb7-02272a56f100",
+                          "handlers": [],
+                          "handlerArgs": [],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        },
+                        {
+                          "name": "edit_user_slideout",
                           "eventSelection": "CREATE_EVENT",
                           "broadcastArgs": {
                             "validationXsql": ""
