@@ -25,71 +25,6 @@
             "helpIconValue": null,
             "shouldRenderHidden": false
           },
-          "control_59": {
-            "type": "variableConfigurator",
-            "controlId": "5ae482a5-e2f4-451b-aab4-a6021df63545",
-            "accessRoles": null,
-            "privileges": null,
-            "styles": {
-              "useComponentShadow": false,
-              "useGreyBackground": false,
-              "useInnerGreyBackground": false
-            },
-            "events": [
-              {
-                "name": "$onPageLoad",
-                "eventSelection": "BIND_EVENT",
-                "id": "5ae482a5-e2f4-451b-aab4-a6021df63545",
-                "handlers": [
-                  "refresh"
-                ],
-                "handlerArgs": [
-                  {}
-                ],
-                "preHandlers": [],
-                "preHandlerArgs": []
-              },
-              {
-                "name": "event_roles_config",
-                "eventSelection": "CREATE_EVENT",
-                "broadcastArgs": {
-                  "validationXsql": ""
-                },
-                "id": "5ae482a5-e2f4-451b-aab4-a6021df63545",
-                "handlers": [],
-                "handlerArgs": [],
-                "preHandlers": [],
-                "preHandlerArgs": []
-              }
-            ],
-            "datasource": {
-              "name": null,
-              "schema": null,
-              "fields": null,
-              "type": null,
-              "isReadOnly": false,
-              "columns": null,
-              "seriesColors": {},
-              "customLabels": {}
-            },
-            "pagination": {
-              "currentPage": 1,
-              "totalItems": null,
-              "itemsPerPage": 200
-            },
-            "columns": [],
-            "whereClauseVariable": null,
-            "variables": [],
-            "valueField": {
-              "dataType": null,
-              "name": null
-            },
-            "usingMultiSelectVariableFormat": false,
-            "title": "Roles config",
-            "staticValue": "",
-            "useStaticValue": false,
-            "staticDataType": "STRING"
-          },
           "control_1": {
             "type": "button",
             "controlId": "1d66ecbc-db53-4d56-a19c-c2cbe5069719",
@@ -133,6 +68,37 @@
             "iconPosition": "left",
             "shouldRenderHidden": false,
             "alignItem": "top-right"
+          },
+          "control_71": {
+            "type": "button",
+            "controlId": "7fc92607-7048-4450-8ba6-840e764f3dfa",
+            "accessRoles": null,
+            "privileges": null,
+            "styles": {
+              "useComponentShadow": false,
+              "useGreyBackground": false,
+              "useInnerGreyBackground": false
+            },
+            "events": [
+              {
+                "name": "event_reset_filters",
+                "eventSelection": "CREATE_EVENT",
+                "broadcastArgs": {
+                  "validationXsql": ""
+                },
+                "id": "7fc92607-7048-4450-8ba6-840e764f3dfa",
+                "handlers": [],
+                "handlerArgs": [],
+                "preHandlers": [],
+                "preHandlerArgs": []
+              }
+            ],
+            "controlData": "Reset Filters",
+            "layoutSize": 100,
+            "buttonColorType": "primary",
+            "icon": "Redo",
+            "iconPosition": "left",
+            "shouldRenderHidden": false
           },
           "control_4": {
             "type": "slideout",
@@ -369,6 +335,22 @@
                       },
                       "events": [
                         {
+                          "name": "$onModalOpen",
+                          "eventSelection": "BIND_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "a465f855-b09c-4886-9529-c41f70783ca6",
+                          "handlers": [
+                            "reset"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        },
+                        {
                           "name": "validate_fields_create_user",
                           "eventSelection": "BIND_EVENT",
                           "broadcastArgs": {
@@ -425,6 +407,22 @@
                         "useInnerGreyBackground": false
                       },
                       "events": [
+                        {
+                          "name": "$onModalOpen",
+                          "eventSelection": "BIND_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "ad65e099-3954-4203-be87-92419dd2dbd5",
+                          "handlers": [
+                            "reset"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        },
                         {
                           "name": "validate_fields_create_user",
                           "eventSelection": "BIND_EVENT",
@@ -489,9 +487,12 @@
                         {
                           "name": "$onModalOpen",
                           "eventSelection": "BIND_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
                           "id": "d5951e1c-4c41-46a7-a66e-da225b2f2c16",
                           "handlers": [
-                            "refresh"
+                            "reset"
                           ],
                           "handlerArgs": [
                             {}
@@ -564,10 +565,15 @@
                           "name": "$onModalOpen",
                           "eventSelection": "BIND_EVENT",
                           "id": "42f51fe5-6691-4bf3-9027-2845c841f22d",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
                           "handlers": [
+                            "reset",
                             "refresh"
                           ],
                           "handlerArgs": [
+                            {},
                             {}
                           ],
                           "preHandlers": [],
@@ -637,9 +643,12 @@
                         {
                           "name": "$onModalOpen",
                           "eventSelection": "BIND_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
                           "id": "42f3a76d-0bcd-4019-bc35-cc886b0f6be3",
                           "handlers": [
-                            "refresh"
+                            "reset"
                           ],
                           "handlerArgs": [
                             {}
@@ -709,6 +718,22 @@
                       },
                       "events": [
                         {
+                          "name": "$onModalOpen",
+                          "eventSelection": "BIND_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "430ee6d5-aceb-4423-8e05-c879ae0f49c7",
+                          "handlers": [
+                            "reset"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        },
+                        {
                           "name": "event_refresh_createSlideOut",
                           "eventSelection": "BIND_EVENT",
                           "broadcastArgs": {
@@ -753,10 +778,15 @@
                           "name": "$onModalOpen",
                           "eventSelection": "BIND_EVENT",
                           "id": "69d86328-17b8-42a5-9434-5014b622050b",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
                           "handlers": [
+                            "reset",
                             "refresh"
                           ],
                           "handlerArgs": [
+                            {},
                             {}
                           ],
                           "preHandlers": [],
@@ -2168,6 +2198,22 @@
                 "handlerArgs": [],
                 "preHandlers": [],
                 "preHandlerArgs": []
+              },
+              {
+                "name": "event_reset_filters",
+                "eventSelection": "BIND_EVENT",
+                "broadcastArgs": {
+                  "validationXsql": ""
+                },
+                "id": "541b8989-610f-47d0-af08-965ea4d6a638",
+                "handlers": [
+                  "reset"
+                ],
+                "handlerArgs": [
+                  {}
+                ],
+                "preHandlers": [],
+                "preHandlerArgs": []
               }
             ],
             "variables": [
@@ -2229,6 +2275,22 @@
                 "id": "cf76ebb0-0b20-4307-9e2f-9e73ff0e173b",
                 "handlers": [
                   "refresh"
+                ],
+                "handlerArgs": [
+                  {}
+                ],
+                "preHandlers": [],
+                "preHandlerArgs": []
+              },
+              {
+                "name": "event_reset_filters",
+                "eventSelection": "BIND_EVENT",
+                "broadcastArgs": {
+                  "validationXsql": ""
+                },
+                "id": "cf76ebb0-0b20-4307-9e2f-9e73ff0e173b",
+                "handlers": [
+                  "reset"
                 ],
                 "handlerArgs": [
                   {}
@@ -2315,6 +2377,22 @@
                 "id": "e558a831-3353-480a-80bc-86d08b586b4a",
                 "handlers": [
                   "refresh"
+                ],
+                "handlerArgs": [
+                  {}
+                ],
+                "preHandlers": [],
+                "preHandlerArgs": []
+              },
+              {
+                "name": "event_reset_filters",
+                "eventSelection": "BIND_EVENT",
+                "broadcastArgs": {
+                  "validationXsql": ""
+                },
+                "id": "e558a831-3353-480a-80bc-86d08b586b4a",
+                "handlers": [
+                  "reset"
                 ],
                 "handlerArgs": [
                   {}
@@ -2442,6 +2520,22 @@
               },
               {
                 "name": "event_user_active_state",
+                "eventSelection": "BIND_EVENT",
+                "broadcastArgs": {
+                  "validationXsql": ""
+                },
+                "id": "6c6776e9-07db-4c88-b878-05d2ec3d0f50",
+                "handlers": [
+                  "refresh"
+                ],
+                "handlerArgs": [
+                  {}
+                ],
+                "preHandlers": [],
+                "preHandlerArgs": []
+              },
+              {
+                "name": "event_reset_filters",
                 "eventSelection": "BIND_EVENT",
                 "broadcastArgs": {
                   "validationXsql": ""
