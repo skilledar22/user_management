@@ -2,7 +2,7 @@
   "accessRoles": [],
   "applicationId": "ad682380-b789-4a39-a5e2-a5860fc944a3",
   "applicationName": "User Management App2",
-  "applicationState": "DRAFT",
+  "applicationState": "PUBLISHED",
   "defaultBranch": "main",
   "gitSubpath": null,
   "gitUrl": "https://github.com/skilledar22/user_management",
