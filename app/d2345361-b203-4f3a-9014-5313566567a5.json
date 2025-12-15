@@ -1215,7 +1215,24 @@
                         "useGreyBackground": false,
                         "useInnerGreyBackground": false
                       },
-                      "events": [],
+                      "events": [
+                        {
+                          "name": "$onModalOpen",
+                          "eventSelection": "BIND_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "748aaab7-91cc-46a1-8a4e-769d6347405e",
+                          "handlers": [
+                            "refresh"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        }
+                      ],
                       "variables": [
                         {
                           "name": "v_name"
@@ -1239,7 +1256,26 @@
                         "useGreyBackground": false,
                         "useInnerGreyBackground": false
                       },
-                      "events": [],
+                      "events": [
+                        {
+                          "name": "$onModalOpen",
+                          "eventSelection": "BIND_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "32ef5abe-3869-4d5f-8c3c-5e46b9932a32",
+                          "handlers": [
+                            "refresh",
+                            "disable"
+                          ],
+                          "handlerArgs": [
+                            {},
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        }
+                      ],
                       "variables": [
                         {
                           "name": "v_email"
@@ -1248,7 +1284,7 @@
                       "labelText": "Email",
                       "labelValue": "",
                       "isMultiLine": false,
-                      "isDisabled": true,
+                      "isDisabled": false,
                       "layoutSize": null,
                       "useEnterBroadcast": false,
                       "shouldRenderHidden": false
@@ -1617,7 +1653,24 @@
                         "useGreyBackground": false,
                         "useInnerGreyBackground": false
                       },
-                      "events": [],
+                      "events": [
+                        {
+                          "name": "$onModalOpen",
+                          "eventSelection": "BIND_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "f4196591-974b-42f1-8983-2779abd8718f",
+                          "handlers": [
+                            "refresh"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        }
+                      ],
                       "variables": [
                         {
                           "name": "v_ip_addresses"
