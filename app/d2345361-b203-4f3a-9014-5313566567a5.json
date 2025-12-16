@@ -2620,74 +2620,54 @@
               {
                 "field": "name",
                 "name": "name",
-                "headerName": "name",
+                "headerName": "Name",
                 "dataType": "string",
                 "editable": false,
                 "isPrimaryKey": false,
                 "formattingStyle": "default",
                 "sortable": false,
                 "readOnly": false,
-                "pinned": false
+                "pinned": false,
+                "currencyFormat": "en-US"
               },
               {
                 "field": "email",
                 "name": "email",
-                "headerName": "email",
+                "headerName": "Email",
                 "dataType": "string",
                 "editable": false,
                 "isPrimaryKey": false,
                 "formattingStyle": "default",
                 "sortable": false,
                 "readOnly": false,
-                "pinned": false
+                "pinned": false,
+                "currencyFormat": "en-US"
               },
               {
                 "field": "is_active",
                 "name": "is_active",
-                "headerName": "is_active",
+                "headerName": "Is Active",
                 "dataType": "string",
                 "editable": false,
                 "isPrimaryKey": false,
                 "formattingStyle": "default",
                 "sortable": false,
                 "readOnly": false,
-                "pinned": false
-              },
-              {
-                "field": "locale",
-                "name": "locale",
-                "headerName": "locale",
-                "dataType": "string",
-                "editable": false,
-                "isPrimaryKey": false,
-                "formattingStyle": "default",
-                "sortable": false,
-                "readOnly": false,
-                "pinned": false
-              },
-              {
-                "field": "ip_addresses",
-                "name": "ip_addresses",
-                "headerName": "ip_addresses",
-                "dataType": "string",
-                "editable": false,
-                "isPrimaryKey": false,
-                "formattingStyle": "default",
-                "sortable": false,
-                "readOnly": false,
-                "pinned": false
+                "pinned": false,
+                "currencyFormat": "en-US"
               },
               {
                 "field": "primary_role_type",
                 "name": "primary_role_type",
-                "headerName": "primary_role_type",
+                "headerName": "Primary Role Type",
                 "dataType": "string",
                 "editable": false,
                 "isPrimaryKey": false,
                 "formattingStyle": "default",
                 "sortable": false,
                 "readOnly": false,
-                "pinned": false
+                "pinned": false,
+                "currencyFormat": "en-US"
               }
             ],
             "whereClauseVariable": null,
