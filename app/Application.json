@@ -20,11 +20,11 @@
     {
       "name": "Roles",
       "icon": "Organization",
-      "pageDefinitionId": "2506d4df-0b8e-4688-af71-20e9c79e4632",
+      "pageDefinitionId": "b31c23e1-41a6-4a1e-8f9e-0dc301de9891",
       "sections": [],
       "accessRoles": null,
       "privileges": null,
-      "isReferredPage": false
+      "isReferredPage": true
     }
   ],
   "tagIds": []
