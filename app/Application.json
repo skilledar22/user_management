@@ -4,10 +4,8 @@
   "applicationName": "User Management App2",
   "applicationState": "PUBLISHED",
   "defaultBranch": "main",
-  "gitSubpath": null,
   "gitUrl": "https://github.com/skilledar22/user_management",
   "icon": "LogoIconOnlyUserManagementComponent",
-  "mainBranch": null,
   "sections": [
     {
       "name": "Users",
@@ -16,7 +14,8 @@
       "description": "",
       "sections": [],
       "accessRoles": null,
-      "privileges": null
+      "privileges": null,
+      "tagIds": null
     }
   ],
   "tagIds": []

@@ -25,71 +25,6 @@
             "helpIconValue": null,
             "shouldRenderHidden": false
           },
-          "control_59": {
-            "type": "variableConfigurator",
-            "controlId": "5ae482a5-e2f4-451b-aab4-a6021df63545",
-            "accessRoles": null,
-            "privileges": null,
-            "styles": {
-              "useComponentShadow": false,
-              "useGreyBackground": false,
-              "useInnerGreyBackground": false
-            },
-            "events": [
-              {
-                "name": "$onPageLoad",
-                "eventSelection": "BIND_EVENT",
-                "id": "5ae482a5-e2f4-451b-aab4-a6021df63545",
-                "handlers": [
-                  "refresh"
-                ],
-                "handlerArgs": [
-                  {}
-                ],
-                "preHandlers": [],
-                "preHandlerArgs": []
-              },
-              {
-                "name": "event_roles_config",
-                "eventSelection": "CREATE_EVENT",
-                "broadcastArgs": {
-                  "validationXsql": ""
-                },
-                "id": "5ae482a5-e2f4-451b-aab4-a6021df63545",
-                "handlers": [],
-                "handlerArgs": [],
-                "preHandlers": [],
-                "preHandlerArgs": []
-              }
-            ],
-            "datasource": {
-              "name": null,
-              "schema": null,
-              "fields": null,
-              "type": null,
-              "isReadOnly": false,
-              "columns": null,
-              "seriesColors": {},
-              "customLabels": {}
-            },
-            "pagination": {
-              "currentPage": 1,
-              "totalItems": null,
-              "itemsPerPage": 200
-            },
-            "columns": [],
-            "whereClauseVariable": null,
-            "variables": [],
-            "valueField": {
-              "dataType": null,
-              "name": null
-            },
-            "usingMultiSelectVariableFormat": false,
-            "title": "Roles config",
-            "staticValue": "",
-            "useStaticValue": false,
-            "staticDataType": "STRING"
-          },
           "control_1": {
             "type": "button",
             "controlId": "1d66ecbc-db53-4d56-a19c-c2cbe5069719",
@@ -133,6 +68,37 @@
             "iconPosition": "left",
             "shouldRenderHidden": false,
             "alignItem": "top-right"
+          },
+          "control_71": {
+            "type": "button",
+            "controlId": "7fc92607-7048-4450-8ba6-840e764f3dfa",
+            "accessRoles": null,
+            "privileges": null,
+            "styles": {
+              "useComponentShadow": false,
+              "useGreyBackground": false,
+              "useInnerGreyBackground": false
+            },
+            "events": [
+              {
+                "name": "event_reset_filters",
+                "eventSelection": "CREATE_EVENT",
+                "broadcastArgs": {
+                  "validationXsql": ""
+                },
+                "id": "7fc92607-7048-4450-8ba6-840e764f3dfa",
+                "handlers": [],
+                "handlerArgs": [],
+                "preHandlers": [],
+                "preHandlerArgs": []
+              }
+            ],
+            "controlData": "Reset Filters",
+            "layoutSize": 100,
+            "buttonColorType": "primary",
+            "icon": "Redo",
+            "iconPosition": "left",
+            "shouldRenderHidden": false
           },
           "control_4": {
             "type": "slideout",
@@ -191,7 +157,7 @@
               }
             ],
             "variables": [],
-            "modalSize": "sm",
+            "modalSize": "md",
             "hasHeader": true,
             "hasFooter": true,
             "modalHeaderMessage": "Create User",
@@ -369,6 +335,22 @@
                       },
                       "events": [
                         {
+                          "name": "$onModalOpen",
+                          "eventSelection": "BIND_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "a465f855-b09c-4886-9529-c41f70783ca6",
+                          "handlers": [
+                            "reset"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        },
+                        {
                           "name": "validate_fields_create_user",
                           "eventSelection": "BIND_EVENT",
                           "broadcastArgs": {
@@ -426,6 +408,22 @@
                       },
                       "events": [
                         {
+                          "name": "$onModalOpen",
+                          "eventSelection": "BIND_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "ad65e099-3954-4203-be87-92419dd2dbd5",
+                          "handlers": [
+                            "reset"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        },
+                        {
                           "name": "validate_fields_create_user",
                           "eventSelection": "BIND_EVENT",
                           "id": "ad65e099-3954-4203-be87-92419dd2dbd5",
@@ -473,6 +471,379 @@
                       "isDisabled": false,
                       "layoutSize": 100,
                       "useEnterBroadcast": false,
+                      "shouldRenderHidden": false
+                    },
+                    "control_11": {
+                      "type": "dropdown",
+                      "controlId": "d5951e1c-4c41-46a7-a66e-da225b2f2c16",
+                      "accessRoles": null,
+                      "privileges": null,
+                      "styles": {
+                        "useComponentShadow": false,
+                        "useGreyBackground": false,
+                        "useInnerGreyBackground": false
+                      },
+                      "events": [
+                        {
+                          "name": "$onModalOpen",
+                          "eventSelection": "BIND_EVENT",
+                          "id": "d5951e1c-4c41-46a7-a66e-da225b2f2c16",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "handlers": [
+                            "reset",
+                            "refresh"
+                          ],
+                          "handlerArgs": [
+                            {},
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        },
+                        {
+                          "name": "event_refresh_createSlideOut",
+                          "eventSelection": "BIND_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "d5951e1c-4c41-46a7-a66e-da225b2f2c16",
+                          "handlers": [
+                            "reset"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        }
+                      ],
+                      "datasource": {
+                        "name": "umn_show_roles",
+                        "type": "view",
+                        "isReadOnly": true,
+                        "schema": "$framework",
+                        "seriesColors": {}
+                      },
+                      "pagination": {
+                        "currentPage": 1,
+                        "totalItems": null,
+                        "itemsPerPage": 200
+                      },
+                      "columns": [],
+                      "whereClauseVariable": null,
+                      "variables": [
+                        {
+                          "name": "v_role_name"
+                        }
+                      ],
+                      "isMultiSelect": true,
+                      "shouldHideLabel": false,
+                      "displayField": {
+                        "dataType": "string",
+                        "name": "rolename"
+                      },
+                      "valueField": {
+                        "dataType": "string",
+                        "name": "rolename"
+                      },
+                      "labelText": "Roles",
+                      "layoutSize": 100,
+                      "shouldRenderHidden": false
+                    },
+                    "control_12": {
+                      "type": "dropdown",
+                      "controlId": "42f51fe5-6691-4bf3-9027-2845c841f22d",
+                      "accessRoles": null,
+                      "privileges": null,
+                      "styles": {
+                        "useComponentShadow": false,
+                        "useGreyBackground": false,
+                        "useInnerGreyBackground": false
+                      },
+                      "events": [
+                        {
+                          "name": "$onModalOpen",
+                          "eventSelection": "BIND_EVENT",
+                          "id": "42f51fe5-6691-4bf3-9027-2845c841f22d",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "handlers": [
+                            "reset",
+                            "refresh"
+                          ],
+                          "handlerArgs": [
+                            {},
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        },
+                        {
+                          "name": "event_refresh_createSlideOut",
+                          "eventSelection": "BIND_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "42f51fe5-6691-4bf3-9027-2845c841f22d",
+                          "handlers": [
+                            "reset"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        }
+                      ],
+                      "datasource": {
+                        "name": "umn_login_profiles",
+                        "type": "view",
+                        "isReadOnly": true,
+                        "schema": "$framework",
+                        "seriesColors": {}
+                      },
+                      "pagination": {
+                        "currentPage": 1,
+                        "totalItems": null,
+                        "itemsPerPage": 200
+                      },
+                      "columns": [],
+                      "whereClauseVariable": null,
+                      "variables": [
+                        {
+                          "name": "v_user_login_profile"
+                        }
+                      ],
+                      "isMultiSelect": false,
+                      "shouldHideLabel": false,
+                      "displayField": {
+                        "dataType": "string",
+                        "name": "name"
+                      },
+                      "valueField": {
+                        "dataType": "string",
+                        "name": "name"
+                      },
+                      "labelText": "Login Profile",
+                      "layoutSize": 100,
+                      "shouldRenderHidden": false
+                    },
+                    "control_14": {
+                      "type": "dropdown",
+                      "controlId": "42f3a76d-0bcd-4019-bc35-cc886b0f6be3",
+                      "accessRoles": null,
+                      "privileges": null,
+                      "styles": {
+                        "useComponentShadow": false,
+                        "useGreyBackground": false,
+                        "useInnerGreyBackground": false
+                      },
+                      "events": [
+                        {
+                          "name": "$onModalOpen",
+                          "eventSelection": "BIND_EVENT",
+                          "id": "42f3a76d-0bcd-4019-bc35-cc886b0f6be3",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "handlers": [
+                            "reset",
+                            "refresh"
+                          ],
+                          "handlerArgs": [
+                            {},
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        },
+                        {
+                          "name": "event_refresh_createSlideOut",
+                          "eventSelection": "BIND_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "42f3a76d-0bcd-4019-bc35-cc886b0f6be3",
+                          "handlers": [
+                            "reset"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        }
+                      ],
+                      "datasource": {
+                        "name": "umn_get_Languages",
+                        "type": "view",
+                        "isReadOnly": true,
+                        "schema": "$framework",
+                        "seriesColors": {}
+                      },
+                      "pagination": {
+                        "currentPage": 1,
+                        "totalItems": null,
+                        "itemsPerPage": 200
+                      },
+                      "columns": [],
+                      "whereClauseVariable": null,
+                      "variables": [
+                        {
+                          "name": "v_locale"
+                        }
+                      ],
+                      "isMultiSelect": false,
+                      "shouldHideLabel": false,
+                      "displayField": {
+                        "dataType": "string",
+                        "name": "name"
+                      },
+                      "valueField": {
+                        "dataType": "string",
+                        "name": "code"
+                      },
+                      "labelText": "Languages",
+                      "layoutSize": 100,
+                      "shouldRenderHidden": false
+                    },
+                    "control_13": {
+                      "type": "input",
+                      "controlId": "430ee6d5-aceb-4423-8e05-c879ae0f49c7",
+                      "accessRoles": null,
+                      "privileges": null,
+                      "styles": {
+                        "useComponentShadow": false,
+                        "useGreyBackground": false,
+                        "useInnerGreyBackground": false
+                      },
+                      "events": [
+                        {
+                          "name": "$onModalOpen",
+                          "eventSelection": "BIND_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "430ee6d5-aceb-4423-8e05-c879ae0f49c7",
+                          "handlers": [
+                            "reset"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        },
+                        {
+                          "name": "event_refresh_createSlideOut",
+                          "eventSelection": "BIND_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "430ee6d5-aceb-4423-8e05-c879ae0f49c7",
+                          "handlers": [
+                            "reset"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        }
+                      ],
+                      "variables": [
+                        {
+                          "name": "v_ip_address"
+                        }
+                      ],
+                      "labelText": "IP Addresses (Optional)",
+                      "labelValue": "",
+                      "isMultiLine": false,
+                      "isDisabled": false,
+                      "layoutSize": 100,
+                      "useEnterBroadcast": false,
+                      "shouldRenderHidden": false
+                    },
+                    "control_17": {
+                      "type": "dropdown",
+                      "controlId": "69d86328-17b8-42a5-9434-5014b622050b",
+                      "accessRoles": null,
+                      "privileges": null,
+                      "styles": {
+                        "useComponentShadow": false,
+                        "useGreyBackground": false,
+                        "useInnerGreyBackground": false
+                      },
+                      "events": [
+                        {
+                          "name": "$onModalOpen",
+                          "eventSelection": "BIND_EVENT",
+                          "id": "69d86328-17b8-42a5-9434-5014b622050b",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "handlers": [
+                            "reset",
+                            "refresh"
+                          ],
+                          "handlerArgs": [
+                            {},
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        },
+                        {
+                          "name": "event_refresh_createSlideOut",
+                          "eventSelection": "BIND_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "69d86328-17b8-42a5-9434-5014b622050b",
+                          "handlers": [
+                            "reset"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        }
+                      ],
+                      "datasource": {
+                        "name": "umn_business_apps",
+                        "type": "view",
+                        "isReadOnly": true,
+                        "schema": "$framework",
+                        "seriesColors": {}
+                      },
+                      "pagination": {
+                        "currentPage": 1,
+                        "totalItems": null,
+                        "itemsPerPage": 200
+                      },
+                      "columns": [],
+                      "whereClauseVariable": null,
+                      "variables": [
+                        {
+                          "name": "v_app_name"
+                        }
+                      ],
+                      "isMultiSelect": true,
+                      "shouldHideLabel": false,
+                      "displayField": {
+                        "dataType": "string",
+                        "name": "appname"
+                      },
+                      "valueField": {
+                        "dataType": "string",
+                        "name": "displayappname"
+                      },
+                      "labelText": "Apps",
+                      "layoutSize": null,
                       "shouldRenderHidden": false
                     },
                     "control_32": {
@@ -546,343 +917,6 @@
                       "isDisabled": false,
                       "layoutSize": null,
                       "useEnterBroadcast": false,
-                      "shouldRenderHidden": false
-                    },
-                    "control_11": {
-                      "type": "dropdown",
-                      "controlId": "d5951e1c-4c41-46a7-a66e-da225b2f2c16",
-                      "accessRoles": null,
-                      "privileges": null,
-                      "styles": {
-                        "useComponentShadow": false,
-                        "useGreyBackground": false,
-                        "useInnerGreyBackground": false
-                      },
-                      "events": [
-                        {
-                          "name": "$onModalOpen",
-                          "eventSelection": "BIND_EVENT",
-                          "id": "d5951e1c-4c41-46a7-a66e-da225b2f2c16",
-                          "handlers": [
-                            "refresh"
-                          ],
-                          "handlerArgs": [
-                            {}
-                          ],
-                          "preHandlers": [],
-                          "preHandlerArgs": []
-                        },
-                        {
-                          "name": "event_refresh_createSlideOut",
-                          "eventSelection": "BIND_EVENT",
-                          "broadcastArgs": {
-                            "validationXsql": ""
-                          },
-                          "id": "d5951e1c-4c41-46a7-a66e-da225b2f2c16",
-                          "handlers": [
-                            "reset"
-                          ],
-                          "handlerArgs": [
-                            {}
-                          ],
-                          "preHandlers": [],
-                          "preHandlerArgs": []
-                        }
-                      ],
-                      "datasource": {
-                        "name": "umn_show_roles",
-                        "type": "view",
-                        "isReadOnly": true,
-                        "schema": "$framework",
-                        "seriesColors": {}
-                      },
-                      "pagination": {
-                        "currentPage": 1,
-                        "totalItems": null,
-                        "itemsPerPage": 200
-                      },
-                      "columns": [],
-                      "whereClauseVariable": null,
-                      "variables": [
-                        {
-                          "name": "v_role_name"
-                        }
-                      ],
-                      "isMultiSelect": true,
-                      "shouldHideLabel": false,
-                      "displayField": {
-                        "dataType": "string",
-                        "name": "rolename"
-                      },
-                      "valueField": {
-                        "dataType": "string",
-                        "name": "rolename"
-                      },
-                      "labelText": "Roles",
-                      "layoutSize": 100,
-                      "shouldRenderHidden": false
-                    },
-                    "control_12": {
-                      "type": "dropdown",
-                      "controlId": "42f51fe5-6691-4bf3-9027-2845c841f22d",
-                      "accessRoles": null,
-                      "privileges": null,
-                      "styles": {
-                        "useComponentShadow": false,
-                        "useGreyBackground": false,
-                        "useInnerGreyBackground": false
-                      },
-                      "events": [
-                        {
-                          "name": "$onModalOpen",
-                          "eventSelection": "BIND_EVENT",
-                          "id": "42f51fe5-6691-4bf3-9027-2845c841f22d",
-                          "handlers": [
-                            "refresh"
-                          ],
-                          "handlerArgs": [
-                            {}
-                          ],
-                          "preHandlers": [],
-                          "preHandlerArgs": []
-                        },
-                        {
-                          "name": "event_refresh_createSlideOut",
-                          "eventSelection": "BIND_EVENT",
-                          "broadcastArgs": {
-                            "validationXsql": ""
-                          },
-                          "id": "42f51fe5-6691-4bf3-9027-2845c841f22d",
-                          "handlers": [
-                            "reset"
-                          ],
-                          "handlerArgs": [
-                            {}
-                          ],
-                          "preHandlers": [],
-                          "preHandlerArgs": []
-                        }
-                      ],
-                      "datasource": {
-                        "name": "umn_login_profiles",
-                        "type": "view",
-                        "isReadOnly": true,
-                        "schema": "$framework",
-                        "seriesColors": {}
-                      },
-                      "pagination": {
-                        "currentPage": 1,
-                        "totalItems": null,
-                        "itemsPerPage": 200
-                      },
-                      "columns": [],
-                      "whereClauseVariable": null,
-                      "variables": [
-                        {
-                          "name": "v_user_login_profile"
-                        }
-                      ],
-                      "isMultiSelect": false,
-                      "shouldHideLabel": false,
-                      "displayField": {
-                        "dataType": "string",
-                        "name": "name"
-                      },
-                      "valueField": {
-                        "dataType": "string",
-                        "name": "name"
-                      },
-                      "labelText": "Login Profile",
-                      "layoutSize": 100,
-                      "shouldRenderHidden": false
-                    },
-                    "control_14": {
-                      "type": "dropdown",
-                      "controlId": "42f3a76d-0bcd-4019-bc35-cc886b0f6be3",
-                      "accessRoles": null,
-                      "privileges": null,
-                      "styles": {
-                        "useComponentShadow": false,
-                        "useGreyBackground": false,
-                        "useInnerGreyBackground": false
-                      },
-                      "events": [
-                        {
-                          "name": "$onModalOpen",
-                          "eventSelection": "BIND_EVENT",
-                          "id": "42f3a76d-0bcd-4019-bc35-cc886b0f6be3",
-                          "handlers": [
-                            "refresh"
-                          ],
-                          "handlerArgs": [
-                            {}
-                          ],
-                          "preHandlers": [],
-                          "preHandlerArgs": []
-                        },
-                        {
-                          "name": "event_refresh_createSlideOut",
-                          "eventSelection": "BIND_EVENT",
-                          "broadcastArgs": {
-                            "validationXsql": ""
-                          },
-                          "id": "42f3a76d-0bcd-4019-bc35-cc886b0f6be3",
-                          "handlers": [
-                            "reset"
-                          ],
-                          "handlerArgs": [
-                            {}
-                          ],
-                          "preHandlers": [],
-                          "preHandlerArgs": []
-                        }
-                      ],
-                      "datasource": {
-                        "name": "umn_get_Languages",
-                        "type": "view",
-                        "isReadOnly": true,
-                        "schema": "$framework",
-                        "seriesColors": {}
-                      },
-                      "pagination": {
-                        "currentPage": 1,
-                        "totalItems": null,
-                        "itemsPerPage": 200
-                      },
-                      "columns": [],
-                      "whereClauseVariable": null,
-                      "variables": [
-                        {
-                          "name": "v_locale"
-                        }
-                      ],
-                      "isMultiSelect": false,
-                      "shouldHideLabel": false,
-                      "displayField": {
-                        "dataType": "string",
-                        "name": "name"
-                      },
-                      "valueField": {
-                        "dataType": "string",
-                        "name": "code"
-                      },
-                      "labelText": "Languages",
-                      "layoutSize": 100,
-                      "shouldRenderHidden": false
-                    },
-                    "control_13": {
-                      "type": "input",
-                      "controlId": "430ee6d5-aceb-4423-8e05-c879ae0f49c7",
-                      "accessRoles": null,
-                      "privileges": null,
-                      "styles": {
-                        "useComponentShadow": false,
-                        "useGreyBackground": false,
-                        "useInnerGreyBackground": false
-                      },
-                      "events": [
-                        {
-                          "name": "event_refresh_createSlideOut",
-                          "eventSelection": "BIND_EVENT",
-                          "broadcastArgs": {
-                            "validationXsql": ""
-                          },
-                          "id": "430ee6d5-aceb-4423-8e05-c879ae0f49c7",
-                          "handlers": [
-                            "reset"
-                          ],
-                          "handlerArgs": [
-                            {}
-                          ],
-                          "preHandlers": [],
-                          "preHandlerArgs": []
-                        }
-                      ],
-                      "variables": [
-                        {
-                          "name": "v_ip_address"
-                        }
-                      ],
-                      "labelText": "IP Addresses (Optional)",
-                      "labelValue": "",
-                      "isMultiLine": false,
-                      "isDisabled": false,
-                      "layoutSize": 100,
-                      "useEnterBroadcast": false,
-                      "shouldRenderHidden": false
-                    },
-                    "control_17": {
-                      "type": "dropdown",
-                      "controlId": "69d86328-17b8-42a5-9434-5014b622050b",
-                      "accessRoles": null,
-                      "privileges": null,
-                      "styles": {
-                        "useComponentShadow": false,
-                        "useGreyBackground": false,
-                        "useInnerGreyBackground": false
-                      },
-                      "events": [
-                        {
-                          "name": "$onModalOpen",
-                          "eventSelection": "BIND_EVENT",
-                          "id": "69d86328-17b8-42a5-9434-5014b622050b",
-                          "handlers": [
-                            "refresh"
-                          ],
-                          "handlerArgs": [
-                            {}
-                          ],
-                          "preHandlers": [],
-                          "preHandlerArgs": []
-                        },
-                        {
-                          "name": "event_refresh_createSlideOut",
-                          "eventSelection": "BIND_EVENT",
-                          "broadcastArgs": {
-                            "validationXsql": ""
-                          },
-                          "id": "69d86328-17b8-42a5-9434-5014b622050b",
-                          "handlers": [
-                            "reset"
-                          ],
-                          "handlerArgs": [
-                            {}
-                          ],
-                          "preHandlers": [],
-                          "preHandlerArgs": []
-                        }
-                      ],
-                      "datasource": {
-                        "name": "umn_business_apps",
-                        "type": "view",
-                        "isReadOnly": true,
-                        "schema": "$framework",
-                        "seriesColors": {}
-                      },
-                      "pagination": {
-                        "currentPage": 1,
-                        "totalItems": null,
-                        "itemsPerPage": 200
-                      },
-                      "columns": [],
-                      "whereClauseVariable": null,
-                      "variables": [
-                        {
-                          "name": "v_app_name"
-                        }
-                      ],
-                      "isMultiSelect": true,
-                      "shouldHideLabel": false,
-                      "displayField": {
-                        "dataType": "string",
-                        "name": "appname"
-                      },
-                      "valueField": {
-                        "dataType": "string",
-                        "name": "displayappname"
-                      },
-                      "labelText": "Apps",
-                      "layoutSize": null,
                       "shouldRenderHidden": false
                     },
                     "control_63": {
@@ -1039,6 +1073,18 @@
                           "handlerArgs": [],
                           "preHandlers": [],
                           "preHandlerArgs": []
+                        },
+                        {
+                          "name": "create_user_slideout",
+                          "eventSelection": "CREATE_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "7db02012-5a2c-49d0-a116-4fe101b91ec9",
+                          "handlers": [],
+                          "handlerArgs": [],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
                         }
                       ],
                       "controlData": "Create",
@@ -1173,7 +1219,24 @@
                         "useGreyBackground": false,
                         "useInnerGreyBackground": false
                       },
-                      "events": [],
+                      "events": [
+                        {
+                          "name": "$onModalOpen",
+                          "eventSelection": "BIND_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "748aaab7-91cc-46a1-8a4e-769d6347405e",
+                          "handlers": [
+                            "refresh"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        }
+                      ],
                       "variables": [
                         {
                           "name": "v_name"
@@ -1197,7 +1260,26 @@
                         "useGreyBackground": false,
                         "useInnerGreyBackground": false
                       },
-                      "events": [],
+                      "events": [
+                        {
+                          "name": "$onModalOpen",
+                          "eventSelection": "BIND_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "32ef5abe-3869-4d5f-8c3c-5e46b9932a32",
+                          "handlers": [
+                            "refresh",
+                            "disable"
+                          ],
+                          "handlerArgs": [
+                            {},
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        }
+                      ],
                       "variables": [
                         {
                           "name": "v_email"
@@ -1206,68 +1288,10 @@
                       "labelText": "Email",
                       "labelValue": "",
                       "isMultiLine": false,
-                      "isDisabled": true,
-                      "layoutSize": null,
-                      "useEnterBroadcast": false,
-                      "shouldRenderHidden": false
-                    },
-                    "control_65": {
-                      "type": "input",
-                      "controlId": "fbda8be8-7fc5-44a5-a52c-2ad4ec4c1b2a",
-                      "accessRoles": null,
-                      "privileges": null,
-                      "styles": {
-                        "useComponentShadow": false,
-                        "useGreyBackground": false,
-                        "useInnerGreyBackground": false
-                      },
-                      "events": [
-                        {
-                          "name": "$onModalOpen",
-                          "eventSelection": "BIND_EVENT",
-                          "broadcastArgs": {
-                            "validationXsql": ""
-                          },
-                          "id": "fbda8be8-7fc5-44a5-a52c-2ad4ec4c1b2a",
-                          "handlers": [
-                            "refresh"
-                          ],
-                          "handlerArgs": [
-                            {}
-                          ],
-                          "preHandlers": [],
-                          "preHandlerArgs": []
-                        },
-                        {
-                          "name": "event_sso_enabled",
-                          "eventSelection": "BIND_EVENT",
-                          "id": "fbda8be8-7fc5-44a5-a52c-2ad4ec4c1b2a",
-                          "broadcastArgs": {
-                            "validationXsql": ""
-                          },
-                          "handlers": [
-                            "disable"
-                          ],
-                          "handlerArgs": [
-                            {}
-                          ],
-                          "preHandlers": [],
-                          "preHandlerArgs": []
-                        }
-                      ],
-                      "variables": [
-                        {
-                          "name": "v_user_sso_id"
-                        }
-                      ],
-                      "labelText": "SSOID",
-                      "labelValue": "",
-                      "isMultiLine": false,
                       "isDisabled": false,
                       "layoutSize": null,
                       "useEnterBroadcast": false,
-                      "shouldRenderHidden": false,
-                      "allowClear": false
+                      "shouldRenderHidden": false
                     },
                     "control_64": {
                       "type": "variableConfigurator",
@@ -1633,7 +1657,24 @@
                         "useGreyBackground": false,
                         "useInnerGreyBackground": false
                       },
-                      "events": [],
+                      "events": [
+                        {
+                          "name": "$onModalOpen",
+                          "eventSelection": "BIND_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "f4196591-974b-42f1-8983-2779abd8718f",
+                          "handlers": [
+                            "refresh"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        }
+                      ],
                       "variables": [
                         {
                           "name": "v_ip_addresses"
@@ -1863,6 +1904,64 @@
                       "useStaticValue": false,
                       "staticDataType": "STRING"
                     },
+                    "control_65": {
+                      "type": "input",
+                      "controlId": "fbda8be8-7fc5-44a5-a52c-2ad4ec4c1b2a",
+                      "accessRoles": null,
+                      "privileges": null,
+                      "styles": {
+                        "useComponentShadow": false,
+                        "useGreyBackground": false,
+                        "useInnerGreyBackground": false
+                      },
+                      "events": [
+                        {
+                          "name": "$onModalOpen",
+                          "eventSelection": "BIND_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "fbda8be8-7fc5-44a5-a52c-2ad4ec4c1b2a",
+                          "handlers": [
+                            "refresh"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        },
+                        {
+                          "name": "event_sso_enabled",
+                          "eventSelection": "BIND_EVENT",
+                          "id": "fbda8be8-7fc5-44a5-a52c-2ad4ec4c1b2a",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "handlers": [
+                            "disable"
+                          ],
+                          "handlerArgs": [
+                            {}
+                          ],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        }
+                      ],
+                      "variables": [
+                        {
+                          "name": "v_user_sso_id"
+                        }
+                      ],
+                      "labelText": "SSOID",
+                      "labelValue": "",
+                      "isMultiLine": false,
+                      "isDisabled": false,
+                      "layoutSize": null,
+                      "useEnterBroadcast": false,
+                      "shouldRenderHidden": false,
+                      "allowClear": false
+                    },
                     "control_69": {
                       "type": "checkbox",
                       "controlId": "edec8dd4-23ce-4532-8083-680c8324de8d",
@@ -1955,6 +2054,18 @@
                       "events": [
                         {
                           "name": "event_update_user",
+                          "eventSelection": "CREATE_EVENT",
+                          "broadcastArgs": {
+                            "validationXsql": ""
+                          },
+                          "id": "6b540d94-f758-4b66-bbb7-02272a56f100",
+                          "handlers": [],
+                          "handlerArgs": [],
+                          "preHandlers": [],
+                          "preHandlerArgs": []
+                        },
+                        {
+                          "name": "edit_user_slideout",
                           "eventSelection": "CREATE_EVENT",
                           "broadcastArgs": {
                             "validationXsql": ""
@@ -2144,6 +2255,22 @@
                 "handlerArgs": [],
                 "preHandlers": [],
                 "preHandlerArgs": []
+              },
+              {
+                "name": "event_reset_filters",
+                "eventSelection": "BIND_EVENT",
+                "broadcastArgs": {
+                  "validationXsql": ""
+                },
+                "id": "541b8989-610f-47d0-af08-965ea4d6a638",
+                "handlers": [
+                  "reset"
+                ],
+                "handlerArgs": [
+                  {}
+                ],
+                "preHandlers": [],
+                "preHandlerArgs": []
               }
             ],
             "variables": [
@@ -2205,6 +2332,22 @@
                 "id": "cf76ebb0-0b20-4307-9e2f-9e73ff0e173b",
                 "handlers": [
                   "refresh"
+                ],
+                "handlerArgs": [
+                  {}
+                ],
+                "preHandlers": [],
+                "preHandlerArgs": []
+              },
+              {
+                "name": "event_reset_filters",
+                "eventSelection": "BIND_EVENT",
+                "broadcastArgs": {
+                  "validationXsql": ""
+                },
+                "id": "cf76ebb0-0b20-4307-9e2f-9e73ff0e173b",
+                "handlers": [
+                  "reset"
                 ],
                 "handlerArgs": [
                   {}
@@ -2291,6 +2434,22 @@
                 "id": "e558a831-3353-480a-80bc-86d08b586b4a",
                 "handlers": [
                   "refresh"
+                ],
+                "handlerArgs": [
+                  {}
+                ],
+                "preHandlers": [],
+                "preHandlerArgs": []
+              },
+              {
+                "name": "event_reset_filters",
+                "eventSelection": "BIND_EVENT",
+                "broadcastArgs": {
+                  "validationXsql": ""
+                },
+                "id": "e558a831-3353-480a-80bc-86d08b586b4a",
+                "handlers": [
+                  "reset"
                 ],
                 "handlerArgs": [
                   {}
@@ -2431,6 +2590,22 @@
                 ],
                 "preHandlers": [],
                 "preHandlerArgs": []
+              },
+              {
+                "name": "event_reset_filters",
+                "eventSelection": "BIND_EVENT",
+                "broadcastArgs": {
+                  "validationXsql": ""
+                },
+                "id": "6c6776e9-07db-4c88-b878-05d2ec3d0f50",
+                "handlers": [
+                  "refresh"
+                ],
+                "handlerArgs": [
+                  {}
+                ],
+                "preHandlers": [],
+                "preHandlerArgs": []
               }
             ],
             "datasource": {
@@ -2449,74 +2624,54 @@
               {
                 "field": "name",
                 "name": "name",
-                "headerName": "name",
+                "headerName": "Name",
                 "dataType": "string",
                 "editable": false,
                 "isPrimaryKey": false,
                 "formattingStyle": "default",
                 "sortable": false,
                 "readOnly": false,
-                "pinned": false
+                "pinned": false,
+                "currencyFormat": "en-US"
               },
               {
                 "field": "email",
                 "name": "email",
-                "headerName": "email",
+                "headerName": "Email",
                 "dataType": "string",
                 "editable": false,
                 "isPrimaryKey": false,
                 "formattingStyle": "default",
                 "sortable": false,
                 "readOnly": false,
-                "pinned": false
+                "pinned": false,
+                "currencyFormat": "en-US"
               },
               {
                 "field": "is_active",
                 "name": "is_active",
-                "headerName": "is_active",
+                "headerName": "Is Active",
                 "dataType": "string",
                 "editable": false,
                 "isPrimaryKey": false,
                 "formattingStyle": "default",
                 "sortable": false,
                 "readOnly": false,
-                "pinned": false
-              },
-              {
-                "field": "locale",
-                "name": "locale",
-                "headerName": "locale",
-                "dataType": "string",
-                "editable": false,
-                "isPrimaryKey": false,
-                "formattingStyle": "default",
-                "sortable": false,
-                "readOnly": false,
-                "pinned": false
-              },
-              {
-                "field": "ip_addresses",
-                "name": "ip_addresses",
-                "headerName": "ip_addresses",
-                "dataType": "string",
-                "editable": false,
-                "isPrimaryKey": false,
-                "formattingStyle": "default",
-                "sortable": false,
-                "readOnly": false,
-                "pinned": false
+                "pinned": false,
+                "currencyFormat": "en-US"
               },
               {
                 "field": "primary_role_type",
                 "name": "primary_role_type",
-                "headerName": "primary_role_type",
+                "headerName": "Primary Role Type",
                 "dataType": "string",
                 "editable": false,
                 "isPrimaryKey": false,
                 "formattingStyle": "default",
                 "sortable": false,
                 "readOnly": false,
-                "pinned": false
+                "pinned": false,
+                "currencyFormat": "en-US"
               }
             ],
             "whereClauseVariable": null,
