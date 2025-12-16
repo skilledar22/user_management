@@ -487,14 +487,16 @@
                         {
                           "name": "$onModalOpen",
                           "eventSelection": "BIND_EVENT",
+                          "id": "d5951e1c-4c41-46a7-a66e-da225b2f2c16",
                           "broadcastArgs": {
                             "validationXsql": ""
                           },
-                          "id": "d5951e1c-4c41-46a7-a66e-da225b2f2c16",
                           "handlers": [
-                            "reset"
+                            "reset",
+                            "refresh"
                           ],
                           "handlerArgs": [
+                            {},
                             {}
                           ],
                           "preHandlers": [],
@@ -643,14 +645,16 @@
                         {
                           "name": "$onModalOpen",
                           "eventSelection": "BIND_EVENT",
+                          "id": "42f3a76d-0bcd-4019-bc35-cc886b0f6be3",
                           "broadcastArgs": {
                             "validationXsql": ""
                           },
-                          "id": "42f3a76d-0bcd-4019-bc35-cc886b0f6be3",
                           "handlers": [
-                            "reset"
+                            "reset",
+                            "refresh"
                           ],
                           "handlerArgs": [
+                            {},
                             {}
                           ],
                           "preHandlers": [],
