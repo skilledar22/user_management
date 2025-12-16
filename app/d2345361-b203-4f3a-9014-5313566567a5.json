@@ -157,7 +157,7 @@
               }
             ],
             "variables": [],
-            "modalSize": "sm",
+            "modalSize": "md",
             "hasHeader": true,
             "hasFooter": true,
             "modalHeaderMessage": "Create User",
