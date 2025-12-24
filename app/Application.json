@@ -1,13 +1,14 @@
 {
-  "accessRoles": [],
+  "accessRoles": [
+    "Administrator"
+  ],
   "applicationId": "ad682380-b789-4a39-a5e2-a5860fc944a3",
   "applicationName": "User Management App2",
   "applicationState": "DRAFT",
   "defaultBranch": "main",
-  "gitSubpath": null,
+  "gitSubpath": "",
   "gitUrl": "https://github.com/skilledar22/user_management",
   "icon": "LogoIconOnlyUserManagementComponent",
-  "mainBranch": null,
   "sections": [
     {
       "name": "Users",
@@ -15,7 +16,9 @@
       "pageDefinitionId": "d2345361-b203-4f3a-9014-5313566567a5",
       "description": "",
       "sections": [],
-      "accessRoles": null,
+      "accessRoles": [
+        "Administrator"
+      ],
       "privileges": null,
       "tagIds": null
     }
